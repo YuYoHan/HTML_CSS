@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 5px solid #000;
+            float:left; /*왼쪽으로부터 정렬*/
+            margin-right: 30px;
+        }
+    .boxr{
+        float:left; /*옆의 박스에 영향을 주는 속성, 나열하고자 하는 박스함께 나열값*/
+    }
+    .boxc{
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        margin-top: 30px;
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div class="boxr">3</div>
+
+    <!--clear : float와 함께 사용, float 제거할 때 사용
+        left  : 좌측 나열을 제거
+        right : 우측 나열을 제거
+        both  : 양쪽 나열을 제거
+    -->
+    <div class="boxc">
+        제거하자!
+    </div>
+
+</body>
+</html>

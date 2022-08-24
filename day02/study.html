@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>study</title>
+    <style>
+        *{
+            /* padding 속성은 내용(content)과 테두리(border) 사이의 간격인 패딩 영역의 크기를 설정*/
+            padding :0; 
+            margin: 0;
+        }
+        .text{
+            color: blue;
+            font-size: 20px;   
+            font-weight: 900; /* 100~300: 가늘게, 400~600 중간, 700~900 : 굵게*/
+            line-height: 50px; /* 행간, 줄간격 - [px,em,pt,%...단위] */
+            font-family: "궁서"; /* 글꼴 - 내 컴퓨터에 저장된 글자가 표현(웹폰트는 예외) */
+            font-style: italic; /* 글자스타일 - italic, normal(기본값) */
+            letter-spacing: 10px; /* 자간, 글자사이의 간격 - 숫자입력(px, %...) */
+            text-align: left; /* 문단 정렬(글자정렬) - left, right, center */
+        }
+        a{
+            text-decoration: none; /*   a태그에 대한 기본값 → 글자를 꾸며주는 속성 
+                                        overline : 위에 선이 쳐짐
+                                        underline : 밑에 선이 처짐 */
+            color: blue;
+        }
+        body{
+            background-color: paleturquoise; /*배경색상*/
+            background-image: url(img/KakaoTalk_20220609_192315744_01.jpg); /*배경이미지 속성 → url(이미지의 경로)
+                                                                              이미지 사이즈가 부모의 사이즈보다 작을 때
+                                                                              반복되는 성격  */
+            background-repeat: no-repeat; /*배경이미지 반복속성 - no-repeat(반복되지 않는 원본 한장)
+                                            repeat-x : 가로반복
+                                            repeat-y : 세로반복
+                                            repeat : 반보그 기본값 */
+            background-size: 300px 200px; /*배경이미지 사이즈 속성 - x(가로폭) , y(세로폭)*/                                                                                                  
+        }
+        h2{
+            background-color: rgb(100, 162, 176);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="text">글자<a href="#">속성</a></h1>
+    <p>
+        2개월 날렸다.<br>
+        정신차리자!
+    </p>
+
+    <h2>배경관련 속성</h2>
+    <p>배경색을 넣거나 배경 이미지를 넣어서 공간을 활용!</p>
+</body>
+</html>

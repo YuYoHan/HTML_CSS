@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+</head>
+<body>
+    <div>
+        이름 : <input type="text">
+    </div>
+    <div>
+        <!-- select는 드롭다운 박스를 만들어내는 태그 -->
+        <!-- 안에 <option> 태그를 통해 하위 메뉴를 만들 수 있다. -->
+        취미:
+        <select>
+            <option value="0">농구</option>
+            <option value="1">자전거</option>
+            <option value="2">풋살</option>
+            <option value="3">코딩</option>
+        </select>
+    </div>
+    <div>
+        <!-- radio : name이 같은 것중에 하나만 고를 수 있다.
+                     radio의 핵심은 name이다. -->
+        성별:
+        <label><input type="radio" name="gender" value="0"/>남자</label>
+        <label><input type="radio" name="gender" value="1"/>여자</label>
+        <label><input type="radio" name="gender" value="2"/>비공개</label>
+    </div>
+    <div>
+        <!-- checkbox : 여러개 선택할 수 있다. -->
+        <label><input type="checkbox"/> 본인</label>
+        <label><input type="checkbox"/> 부모</label>
+        <label><input type="checkbox"/> 형제</label>
+        <label><input type="checkbox"/> 지인</label>
+    </div>
+</body>
+</html>

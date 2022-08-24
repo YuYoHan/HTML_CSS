@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+        <title>TypeIt</title>
+        <style>
+            :root {
+                --ti-cursor-margin-left: 0.1em;
+                --ti-cursor-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">TypeIt을 적용해보자!</h1>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                new TypeIt("#title")
+                    /*걸리는 시간*/
+                    .pause(1000)
+                    /*7자를 없앰*/
+                    .delete(7, { delay: 1000 })
+                    .type(" 실습해보자!")
+                    .go();
+            });
+        </script>
+    </body>
+</html>

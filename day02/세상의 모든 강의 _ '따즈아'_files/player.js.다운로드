@@ -1,0 +1,414 @@
+var positionfrom = 0, positionto = 0, duration = 0, oldposition = 0, saveposition = 0, evented = 0, returnurls = '', contsid = 0, closepopup = false;
+
+/*
+ * 플레이어 load 함수
+ * @param {type} id 플레이어 영역 id
+ * @param {type} url 비디오 url
+ * @param {type} options 플레이어 옵션
+ * @returns {undefined}
+ */
+function Load_Player(id, url, options) {
+    //player size setting
+//    $('#'+id).css('width', options["width"]+'px');
+//    $('#'+id).css('height', options["height"]+'px');
+
+    var speedbar = false;
+
+    if (options["speedbar"]) {
+        speedbar = [0.5, 1.0, 1.5, 2.0];
+    }
+
+    var videotype = 'video/mp4';
+    if (options["videotype"] == 'hls') {
+        videotype = 'application/x-mpegurl';
+    } else if (options["videotype"] == 'webm') {
+        videotype = 'video/webm';
+    }
+
+    flowplayer(function (api, root) {
+        var instanceId = root.getAttribute("data-flowplayer-instance-id"),
+                engineInfo = document.getElementById("engine" + instanceId),
+                vtypeInfo = document.getElementById("vtype" + instanceId),
+                detail = document.getElementById("detail" + instanceId);
+
+        if (!options['seeking']) {
+            $('.flowplayer .fp-buffer, .flowplayer .fp-progress').css('cursor', 'default');
+            $('.flowplayer .fp-progress').css('background-color', '#999');
+            // seek할 때 효과 없애기
+            $(".fp-buffer, .fp-progress", root).on("mousedown touchstart", function (e) {
+                e.stopPropagation();
+            });
+            // 모바일 일 때 터치 버튼 숨기기
+            $(root).removeClass("is-touch");
+        }
+
+        api.on("ready", function (e, api, video) {
+            var engineName = api.engine.engineName;
+            positionto = options["startposition"];
+            positionfrom = positionto;
+            duration = Math.floor(video.duration);
+            closepopup = false;
+            returnurls = options["returnurl"];
+            contsid = $('#okmediaid').val();
+
+            if (positionfrom < duration) {
+                api.seek(positionfrom);
+            }
+
+        }).on("resume", function (e) {
+            //플레이 버튼 클릭 시 호출
+            if (positionto > 1) {
+                positionfrom = positionto;
+            }
+            evented = 0;
+        }).on("pause", function (e, api) {
+            //스톱 버튼 클릭 시 호출
+            if (!closepopup) {
+                if (positionfrom < positionto && options["progresschk"]) {
+                    playtime_update(positionfrom, positionto, 1, duration, options["returnurl"], $('#okmediaid').val(), 'update');
+                }
+            }
+        }).on("progress", function (e, api) {
+            //타임라인
+            if (!closepopup) {
+                positionto = Math.floor(api.video.time);
+//                console.log(positionto);
+
+                // 10초 마다 진행
+                if (evented == 0 && positionfrom < positionto && positionto % 10 == 0) {
+                    playtime_update(positionfrom, positionto, 4, duration, options["returnurl"], $('#okmediaid').val(), 'update');
+                }
+            }
+        }).on("finish", function (e, api) {
+
+            //동영상이 끝나면 호출
+            if (positionfrom < duration && options["progresschk"]) {
+                playtime_update(positionfrom, duration, 3, duration, options["returnurl"], $('#okmediaid').val(), 'update');
+                closepopup = true;
+            }
+            positionfrom = positionto = 0;
+            evented = 1;
+        });
+    });
+
+    flowplayer("#" + id, {
+        key: options["key"],
+        splash: false,
+        autoplay: options["autoplay"],
+        ratio: 5 / 12,
+        speeds: speedbar,
+        disabled: options["disabled"],
+        fullscreen: options["fullscreen"],
+        keyboard: options["keyboard"],
+        seekable: false,
+        clip: {
+            sources: [
+                {
+                    type: videotype,
+                    src: url
+                }
+            ]
+        }
+    });
+}
+
+
+// 사용자 환경 체크
+function okmedia_device_check() {
+
+    //디바이스별 판별
+    var _ua = window.navigator.userAgent.toLowerCase();
+    var device = '';
+    var browser = {
+        ipod: /webkit/.test(_ua) && /\(ipod/.test(_ua),
+        ipad: /webkit/.test(_ua) && /\(ipad/.test(_ua),
+        iphone: /webkit/.test(_ua) && /\(iphone/.test(_ua),
+        android: /webkit/.test(_ua) && /android/.test(_ua),
+        trident: /trident/.test(_ua),
+        msie: /msie/.test(_ua)
+    };
+
+    if (browser.ipod || browser.iphone) {
+        device = 'iphone';
+    } else if (browser.ipad) {
+        device = 'ipad';
+    } else if (browser.android) {
+        device = 'android';
+    } else if (browser.msie) {
+        device = 'msie';
+    } else if (browser.trident) {
+        device = 'msie';
+    } else {
+        device = 'etc';
+    }
+    return device;
+}
+
+function update_realtime() {
+    $.ajax({
+        url: "update_realtime.php",
+        type: "post",
+        cache: false,
+        data: {
+            id: $('#okmediaid').val()
+        }
+    });
+    setTimeout("update_realtime()", 10000); // 10초 단위로 갱신 처리
+}
+
+/*
+ * 
+ * @param {type} posfrom 시작 지점
+ * @param {type} posto 현재 지점
+ * @param {type} posevent 이벤트 종류
+ * @param {type} duration 해당 콘텐츠의 총 시간
+ * @param {type} returnurl 파라미터를 넘길 파일(페이지)
+ * @param {type} contentid 콘텐츠 아이디(lcms_contents)
+ * @param {type} mode action
+ * @returns {Boolean}
+ */
+function playtime_update(posfrom, posto, posevent, duration, mode) {
+    if (!closepopup) {
+        var status = true;
+
+        var device = okmedia_device_check();
+
+        $.ajax({
+            url: '/mod/okmedia/viewer/okmedia_playtime_ajax.php',
+            type: 'POST',
+            dataType: 'json',
+            async: true,
+            data: {
+                act: 'update',
+                positionto: posto,
+                positionfrom: posfrom,
+                positionevent: posevent,
+                duration: duration,
+                device: device,
+                id: $('#okmediaid').val() 
+            },
+            success: function (data) {
+
+                console.log(data);
+
+                if (data.status == 'success') {
+                    status = true;
+                    $('#id_lastview').text(data.last);
+                    $('#id_playtime').text(data.totaltime);
+                    $('#id_progress').text("진도율 " + data.progress);
+                    pop_progress_main();
+                } else {
+                    status = false;
+                }
+            }, error: function (request, textstatus, error) {
+                //alert('네트워크 연결이 일시적으로 중단되었습니다. 다시 시도하시기 바랍니다.');
+                //playtime_update(id,posfrom,posto,duration,second);
+//                console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+                status = false;
+            }
+        });
+        return status;
+    }
+}
+
+function onclosepopup() {
+    playtime_update(positionfrom, positionto, 3, duration, returnurls, contsid, 'update');
+}
+ function playtime_update_close(posfrom, posto, posevent, duration, mode) {
+        var status = false;
+        if (mode == 'player') {
+            var device = okmedia_device_check();
+            $.ajax({
+                url: '/mod/okmedia/viewer/okmedia_playtime_ajax.php',
+                type: 'POST',
+                dataType: 'json',
+                async: true,
+                data: {
+                    act: 'update',
+                    positionto: posto,
+                    positionfrom: posfrom,
+                    positionevent: posevent,
+                    duration: duration,
+                    device: device,
+                    id: $('#okmediaid').val()
+                },
+                success: function (data) {
+                    if (data.status == 'success') {
+                        status = true;
+                        window.opener.location.reload();
+                        self.close();
+                    }
+                },
+                error: function (e) {
+                    console.log(data);
+                    //alert('네트워크 연결이 일시적으로 중단되었습니다. 다시 시도하시기 바랍니다.');
+                    //playtime_update(id,posfrom,posto,duration,second);
+                    status = false;
+                }
+            });
+        } else {
+            status = true;
+            window.parent.close();
+        }
+        return status;
+    }
+
+function popcontents_get_playtime(okmid, returnsurl) {
+    var positionfrom = 0;
+
+    var device = okmedia_device_check();
+
+    $.ajax({
+        url: returnsurl,
+        type: 'POST',
+        dataType: 'json',
+        async: false,
+        data: {
+            act: 'get',
+            device: device,
+            okmid: okmid
+        },
+        success: function (data) {
+            if (data.status == 'success') {
+                $('#id_lastview').text(data.last);
+                if (data.positionto > 0) {
+                    //이어보기
+                    positionfrom = data.positionto;
+                    console.log(positionfrom);
+                }
+            } else {
+                //alert(data.message);
+            }
+        },
+        error: function (e) {
+            //alert('네트워크 연결이 일시적으로 중단되었습니다. 다시 시도하시기 바랍니다.');
+        }
+    });
+    return positionfrom;
+}
+
+function caption_scroll(position) {
+
+    var lang = $('#subtitleslang').val();
+    if (lang.length != 0 && lang != '') {
+        if ($('.script_list.' + lang).length > 0 && $('.script_list.' + lang + ' div.subtext.sub' + position).length > 0) {
+            var scroll = $('.script_list.' + lang).scrollTop();
+            var pos = $('.script_list.' + lang + ' div.subtext.sub' + position).position().top - 200;
+            var cur = scroll + pos;
+
+            $('.script_list.' + lang + ' div.subtext').css({'color': '#7d7d84', 'font-weight': 'normal'});
+            $('.script_list.' + lang + ' div.subtext.sub' + position).css({'color': '#f34d78', 'font-weight': '600'});
+            $('.script_list.' + lang).animate({scrollTop: cur}, 600);
+        }
+    }
+}
+
+//$(document).ready(function () {
+//    /**동영상 팝업 닫기**/
+//    $(parent.document).find("#popclose").click(function () {
+//        //창 닫기 전에 진도율 저장
+//        onclosepopup();
+//    });
+//    /**동영상 팝업 닫기**/
+//});
+
+//function pop_url_player(url) {
+//    window.open(url, 'urlpop', 'width=700, height=600,');
+//}
+
+function pop_progress_main() {
+
+    /*진도율 팝업*/
+    var mediaid = $('#okmediaid').val();
+
+    $("#popbg").height($("body").prop("scrollHeight"));
+    $.ajax({
+        url: '/mod/okmedia/viewer/pop_progress.php',
+        data: {
+            id: mediaid,
+            duration: duration
+        }, success: function (html) {
+            $("#durationbar").html($(html).find(".pop_wrap").html());
+            $("#durationbar").fadeIn();
+
+            $(".popclose").click(function () {
+                $("#durationbar").fadeOut();
+            });
+        }
+    });
+}
+
+function pop_progress() {
+
+    /*진도율 팝업*/
+    var mediaid = $('#okmediaid').val();
+
+    //console.log(mediaid+'/'+duration);
+
+    $("#popbg").height($("body").prop("scrollHeight"));
+    $.ajax({
+        url: "/mod/okmedia/viewer/pop_progress.php",
+        data: {id: mediaid, duration: duration},
+        success: function (html) {
+            $("#durationbar").html($(html).find(".pop_wrap").html());
+            $("#durationbar").fadeIn();
+
+            $(".popclose").click(function () {
+                $("#durationbar").fadeOut();
+            });
+        }
+    });
+}
+
+/*
+ window.addEventListener("beforeunload", function (e) {
+ var cook = $.cookie('video_event_<?php echo $id;?>_<?php echo $USER->id;?>');
+ $.cookie('video_event_<?php echo $id;?>_<?php echo $USER->id;?>',null);
+ if(cook=='1' || cook=='4' || cook=='5'){
+ var confirmationMessage = "<?php echo get_string('beforeunload','lcms');?>";
+ (e || window.event).returnValue = confirmationMessage;     // Gecko and Trident
+ return confirmationMessage;
+ }// Gecko and WebKit
+ });
+ */
+function playtime_get(mode) {
+
+    var positionfrom = 0;
+
+    if (mode == 'player') {
+
+        var device = okmedia_device_check();
+
+        $.ajax({
+            url: '/mod/okmedia/viewer/okmedia_playtime_ajax.php',
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            data: {
+                act: 'get',
+                device: device,
+                id: $('#okmediaid').val()
+            },
+            success: function (data) {
+                if (data.status == 'success') {
+
+                    $('#id_lastview').text(data.last);
+
+                    if (data.positionto > 0) {
+                        //이어보기
+                        positionfrom = data.positionto;
+                    }
+
+                } else {
+                    //alert(data.message);
+                }
+            },
+            error: function (e) {
+                //alert('네트워크 연결이 일시적으로 중단되었습니다. 다시 시도하시기 바랍니다.');
+            }
+        });
+    }
+
+    return positionfrom;
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css텍스트</title>
+    <style>
+        h1{
+            font-size: 100px;
+        }
+        #shadow1{
+            text-shadow: 10px 10px; 
+            color: hotpink;
+        }
+        #shadow2{
+            /*  첫번째 : x축 그림자를 얼만큼 이동
+                두번째 : y축 그림자를 얼만큼 이동
+                세번째 : 그림자를 얼마나 번지게 할 것인지*/
+            text-shadow: 10px 10px 5px;
+            color: deeppink;
+        }
+        #shadow3{
+            text-shadow: 10px 10px 5px #f00;
+        }
+        #shadow4{
+            color: #fff;
+            text-shadow: 10px -10px 5px #000;
+        }
+    </style>
+</head>
+<body>
+    <h2>css텍스트1</h2>
+    <h1 id="shadow1">css  TEXT-SHADOW</h1>
+    <h1 id="shadow2">css  TEXT-SHADOW</h1>
+    <h1 id="shadow3">css  TEXT-SHADOW</h1>
+    <h1 id="shadow4">css  TEXT-SHADOW</h1>
+</body>
+</html>
