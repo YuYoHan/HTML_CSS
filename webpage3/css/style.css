@@ -185,9 +185,6 @@ section.living .list li a img {
     width: 100%;
     transition: all 0.5s;
 }
-section.living .list li a img:nth-child(2) {
-    height: 4000px;
-}
 
 section.living .list li a:hover img,
 section.living .list li a:focus img {
