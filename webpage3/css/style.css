@@ -43,7 +43,8 @@ body {
 .visual {
     width: 100%;
     height: 950px;
-    background: url(../img/208062822226.jpg) no-repeat center/cover;
+    background: url(../img/news-p.v1.20220826.22ce566efd76412b9a6a203e691b7733.jpg)
+        no-repeat center/cover;
     border-top: 1px solid #f3c565;
     color: #fff;
 }
@@ -99,4 +100,97 @@ body {
     top: 50%;
     margin-top: -3px;
     right: 0;
+}
+
+/*공통 title_s*/
+.textBox .title_s {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding-right: 60px;
+}
+
+.textBox .title_s::after {
+    content: "";
+    width: 50px;
+    height: 6px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -3px;
+}
+
+/*공통 title_num*/
+.textBox .title_num {
+    display: block;
+    float: right;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    position: relative;
+}
+.textBox .title_num::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*r공통 버튼*/
+.textBox .title_btn {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*section.living*/
+section.living {
+    padding: 100px 0;
+}
+section.living .textBox p {
+    margin: 20px 0 30px;
+}
+section.living .list {
+    overflow: hidden;
+}
+section.living .list li {
+    float: left;
+    margin-bottom: 20px;
+    width: 33em;
+}
+
+section.living .list li:nth-child(2) {
+    float: right;
+    width: 35em;
+}
+section.living .list li:nth-child(3) {
+    width: 100%;
+}
+section.living .list li a {
+    display: block;
+    overflow: hidden;
+}
+
+section.living .list li a img {
+    width: 100%;
+    transition: all 0.5s;
+}
+section.living .list li a img:nth-child(2) {
+    height: 4000px;
+}
+
+section.living .list li a:hover img,
+section.living .list li a:focus img {
+    transform: scale(1.2);
+    transition: all 1s;
 }
