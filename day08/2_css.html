@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css의 텍스트2</title>
+    <style>
+        .content{
+            border: 3px solid red;
+            width: 600px;
+            padding: 10px;
+            /*  기본값은 normal, 줄바꿈 x : nowrap 줄바꿈 o : wrap
+                pre : 긴 공백을 유지 */
+            white-space: nowrap;
+            /* 배너나 슬라이드*/
+            overflow: hidden;
+            /*  말줄임... overflow가 hidden인 경우만 적용*/
+            /* text-overflow: ellipsis; */
+            
+            /* 세로 말 줄임을 하려고 하면 밑에 3개를 전부 써야한다.*/
+            display: -webkit-box;
+            /* 세로줄 수*/
+            -webkit-line-clamp: 8;
+            /* 컨텐츠 배치 방식*/
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <h2>css의 텍스트2</h2>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum esse, provident facere incidunt quo culpa dolorum 
+        tempore suscipit nam aut molestiae maiores sapiente, nobis labore sed voluptates? Sit, illo ex!</p>
+</body>
+</html>

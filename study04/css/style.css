@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/057d948b-ae97-4734-9d16-35a3a78cb17d/KR-ko-20220808-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section::before {
+    content: "";
+    /*검은색이 오른쪽으로 가면서 투명해진다.*/
+    background: linear-gradient(to right, #000, transparent);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+
+section > p:nth-child(2) {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+}
+h3 {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200px);
+}

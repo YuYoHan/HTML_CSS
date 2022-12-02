@@ -1,0 +1,1438 @@
+@charset "utf-8";
+@media screen and (max-width:1600px){
+    .main-slider.slick-slider{padding-top: 30%;height: 0 !important;}
+    .main-slider .sd img{max-width: none;left: 0;top:0;transform: translate(0, 0);}
+} 
+@media screen and (max-width:1300px){
+    .floating-menu{margin-left: 0;left: auto;right: 20px;}
+    /*## header ##*/
+    .vis-hd .custom-select>strong>a{padding: 0 16px;font-size: 18px;}
+    .lang-en .vis-hd .custom-select>strong>a{padding: 0 13px;font-size: 16px;}
+    .lang-vi .vis-hd .custom-select>strong>a {padding: 0 9px;font-size: 15px;}
+    .mk-jobs.lang-vi .vis-hd .custom-select>strong>a{padding: 0 7px !important;font-size: 15px !important;}
+    .mk-jobs.lang-en .vis-hd .custom-select>strong>a{padding: 0 7px !important;font-size: 16px !important;}
+    .lang-vi .vis-hd .custom-select>strong{font-size: 16px;}
+    .vis-hd .f-r>div.user-info{min-width: 130px;}
+    .vis-hd .f-r>div.user-info>p{width: 130px;}
+    .vis-hd .f-r>div.alram{margin-right: 20px;}
+    .mk-jobs .vis-hd .logo img{width: 200px;margin-top: 10px;}
+
+    .main-slider .slick-dots, .mk-jobs.jobs-site .main-slider .slick-dots{margin-left: 0;padding-left: 0;right: 100px;}
+    .mk-jobs.jobs-site .main-slider .slick-dots{margin-left: 0 !important;}
+    .main-slider .slick-prev{left: 10px;margin-left: 0;}
+    .main-slider .slick-next{right: 10px;margin-right: 0;}
+    .main-slider .sd .group{width: 100%;padding: 0 100px;}
+    .main-slider.slick-slider{min-height: 370px;}
+    .main-slider .sd img{object-fit: cover;}
+
+
+
+
+    /*## 인재검색 ##*/
+    .ck-scrl-bx>.bx .bx-th label span{font-size: 14px;}
+    .ck-scrl-bx>.bx .bx-th{padding: 14px 10px;}
+    .ck-scrl-bx>.bx .bx-scrl>p{padding: 14px 10px;}
+    .ck-scrl-bx>.bx .bx-scrl>p label span{font-size: 13px;}
+    .talent-list>li .t-img{width: 100px;height: 100px;margin-right: 10px;}
+    .talent-list>li .t-u-info{width: 80px;}
+    .talent-list>li .t-c-info{width: calc(100% - 310px);padding-right: 10px;}
+
+
+    /*## footer ##*/
+    .vis-footer .group .f-r{right: 10px;}
+
+}
+
+@media screen and (max-width:1024px){
+    body {padding-top: 51px;}
+    body.noScroll{padding-right: 0 !important;}
+    body #wrap{padding-bottom: 50px;}
+    body #wrap + .vis-footer{margin-bottom: 50px;}
+    body #wrap #wrap{padding-bottom: 0;}
+    .floating-menu{bottom: 60px;transition: bottom 0.2s;}
+    .on-button .floating-menu{bottom: 55px;}
+    .course-layout.on-button .floating-menu{bottom: 10px;}
+    .cont{padding-top: 50px;}
+    .cont .cont{padding-top: 0;}
+    .course-layout .cont{padding-top: 0;}
+    /*.mk-jobs.jobs-site .cont{padding-top: 0;}*/
+    .course-layout .cont{padding-top: 0;}
+    .ic-new{background-image: url("/theme/oklassedu/pix/images/icon_new_mobile.png");background-size: 8px auto;}
+
+    .layerpop.main-pop{z-index: 10;top: 60px !important}
+
+    /*## header ##*/
+    .vis-hd{height: 50px;padding-top: 0;}
+    .vis-hd .tp{display: none;}
+    .vis-hd>.wp{border-top: 0;}
+    .vis-hd .ic-login{cursor: pointer;font-size: 0;background:url("/theme/oklassedu/pix/images/icon_login.png") no-repeat center;background-size: 17px auto;width: 50px;height: 50px;display: inline-block;position: absolute;left: 0;top: 0;z-index: 2;}
+    .course-layout .vis-hd .ic-login{display: none;}
+    .vis-hd.main .ic-login, .pagelayout-frontpage .vis-hd .ic-login, .pagelayout-join .vis-hd .ic-login{display: block;}
+    .vis-hd .m-menu{display: block;font-size: 0;position: absolute;z-index: 3;right: 0px;top: 0;background: url("/theme/oklassedu/pix/images/m_menu.png") no-repeat center right 14px;width: 40px;height: 50px;background-size: auto 16px;cursor: pointer;z-index: 3;}
+    .vis-hd .m-menu-area.on ~ .m-menu, .vis-hd .m-menu-area.on ~ .f-r .m-menu, .vis-hd .m-menu.on{background: url(/theme/oklassedu/pix/images/icon_menu_close.png) no-repeat center right 14px;
+    background-size: 18px auto;}
+    .vis-hd .logo{border: 0;margin: 0 auto;float: none;width: auto;position: absolute;left: 0;top: 0;padding-left: 15px;width: 35px;overflow: hidden;z-index: 3;}
+    .course-layout .vis-hd .logo{display: none;}
+    .vis-hd.main .logo, .pagelayout-frontpage .vis-hd .logo, .pagelayout-join .vis-hd .logo, .customp{display: block;}
+    .vis-hd .logo img{height: 30px;padding-top: 10px;}
+    .vis-hd .f-r>div.user-info, .vis-hd .f-r>div.login-area{display: none;}
+    .vis-hd .f-r>div.search-evt{display: none;}
+    .vis-hd .f-r>div.search-evt img{display: none;}
+    .vis-hd .f-r>div.search-evt>a{padding: 0;height: 50px;width: 50px; background: url("/theme/oklassedu/pix/images/icon_search_m.png") no-repeat center;background-size: 21px auto;}
+    .vis-hd .f-r>div.alram{display: none !important;}
+    .vis-hd .f-r>div.alram>a{background: url("/theme/oklassedu/pix/images/icon_bell_m.png") no-repeat center;background-size: 18px auto;background-color: #fff;}
+    .vis-hd .f-r>div.alram img{display: none;}
+    .vis-hd .f-r>div.alram>a>span{height: 16px;line-height: 16px;font-size: 11px;padding: 0 7px;width: auto;margin-top: -16px;}
+    .hd-search-area{display: block;border: 0;min-height: 0;top: 0 !important;left: 50%!important;background: transparent;padding: 0;opacity: 1 !important;z-index: 2;padding: 7px 0 0 0;height: 50px;box-sizing: border-box;width: calc(100% - 105px);transform: translate(-50%,0);}
+    .hd-search-area > .close-search, .hd-search-area .hash-area{display: none;}
+    .hd-search-area .hd-fr{height: 35px;border: 1px solid #eaeaea;border-radius: 35px;padding-right: 45px;}
+    .hd-search-area .hd-fr input[type=submit], .hd-search-area .hd-fr input[type=submit]:hover{height: 35px !important;width: 47px !important;background: url("/theme/oklassedu/pix/images/icon_search_m.png") no-repeat center;background-size: 21px auto;border-radius: 0 50px 50px 0 !important;}
+    .hd-search-area .hd-fr input[type=text]{font-size: 14px;color: #000;padding-top: 0;padding-bottom: 0;line-height: 33px;border-radius: 50px 0 0 50px;}
+    .vis-hd .f-r>.login-area{display: none;}
+    
+
+    .m-prev{position: relative;display: block;height: 50px;width: 100%;background:#fff;position: absolute;left: 0;top: 50px;z-index: 2;line-height: 50px;font-weight: 500;font-size: 16px;border-bottom: 1px solid #eee;text-align: center;}
+    .m-prev .ic-arrow{font-size: 0;background: url("/theme/oklassedu/pix/images/icon_m_back.png") no-repeat left 17px center;background-size: 16px auto;width: 50px;height: 50px;position: absolute;left: 0;top: 0;}
+    .vis-hd.main .m-prev, .pagelayout-frontpage .m-prev, .pagelayout-join .m-prev{display: none;}
+    .course-layout .m-course-tit{display: block;position: absolute;z-index: 2;line-height: 50px;left: 0;top: 0;width: 100%;text-align: center;font-size: 18px;font-weight: 500;}
+    .course-layout .hd-search-area{display: none;}
+    .mk-jobs .m-prev.mg-bt20 + .cont{padding-top: 20px;}
+    .learn-list .slick-arrow{width: 13px !important;}
+    .learn-list .slick-prev{left: 20px;}
+    .learn-list .slick-next{right: 20px;}
+
+    .vis-hd .f-r > div.alram .alram-list{top: 51px;left: 0;}
+    .my-wrap{top: 50px;}
+
+
+    /*## 강의실 헤더##*/
+    .course-layout .m-crs-out{display: inline-block;text-decoration: underline;font-size: 16px;position: absolute;left: 0;top: 0;line-height: 50px;font-size: 0;background: url("/theme/oklassedu/pix/images/icon_close.png") no-repeat center;width: 50px;background-size: 18px auto;}
+    .course-layout .crs-right-block{width: 100%;}
+    .course-layout .m-ft-link{display: none !important;}
+    .course-layout .m-prev{display: none;}
+    .course-layout .vis-hd .f-r>div.search-evt{display: none;}
+    .course-layout .popbg.course{top: 50px;opacity: 0.5;}
+    .course-layout .crs-left-block{position: fixed;top: 50px;right: -100%;background: #fff;bottom: 0;z-index: 999999;width: 90%;overflow: auto;transition: right 0.4s;margin: 0;max-width: 400px;}
+    .course-layout .crs-left-block.on{right: 0;}
+    .course-layout .crs-left-block>ul{margin-bottom: -1px;border: 0;border-top: 1px solid #eee;}
+    .course-layout .crs-left-block .btns-area{display: none;}
+    .course-layout .crs-left-block>ul>li{float: none !important;display: block;width: 100%;}
+    .course-layout .crs-left-block>ul>li>a{padding: 20px 18px;border-bottom: 1px solid #eee;line-height: 1;font-size: 16px;}
+    .course-layout .crs-left-block>ul>li.on>a{background: #fff;background-size: 9px auto;padding-right: 13px;color: #bf0e14;}
+    .course-layout .crs-left-block>ul>li:hover>a{background: #fff;color: #000;}
+
+
+    /*## main ##*/
+    .main-contents{overflow: visible !important;} 
+    .main-slider .slick-dots, .mk-jobs.jobs-site .main-slider .slick-dots{left: 0 !important;width: 100%;padding: 0;margin: 0;text-align: center;top: auto !important;bottom: 10px;}
+    .main-contents .white-area .green-bx>p{min-width: 100%;}
+    .main-contents .thumb-list li{margin-bottom: 20px;}
+
+    .vis-hd .popbg{display: none;top: 50px;}
+    .vis-hd .m-menu-area{position: fixed;top: 50px;;right: -100%;background: #fff;bottom: 0;z-index: 999999;width: 90%;padding: 0 0 55px;overflow: hidden;transition: right 0.4s;max-width: 400px;}
+    .vis-hd .m-menu-area.on{right: 0;text-align: left;}
+    .m-close{cursor: pointer;display: inline-block;font-size: 0;position: absolute;top: 14px;right: 14px;background: url("/theme/oklassedu/pix/images/icon_close.png");background-size: 22px 22px;width: 22px;height: 22px;}
+    .m-tp{text-align: center;border-bottom: 1px solid #ccc;background: #f8f8f8; padding: 15px 0 17px; display: block;height: 107px;box-sizing: border-box;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+    .m-tp>div{margin-bottom: 12px;font-size: 20px;font-weight: 500;}
+    .m-tp .btns.br{color: #555;height: 33px;line-height: 31px;font-size: 13px}
+    .vis-hd .custom-select, .vis-hd .custom-select.no-pc{display:block;}
+    .vis-hd .custom-select{display: block;width: 100%;padding: 0;overflow: hidden;margin: 0 0 0;border-bottom: 1px solid #f0f0f0;}
+    .vis-hd .custom-select:not(.no-sub)>strong{background: url("/theme/oklassedu/pix/images/icon_menu_arrow_u.png") no-repeat right 15px center;background-size: 15px auto;}
+    .vis-hd .custom-select.on>strong{border-bottom: 0;line-height: normal;}
+    .vis-hd .custom-select:not(.no-sub).on>strong{background: url("/theme/oklassedu/pix/images/icon_menu_arrow_d.png") no-repeat right 15px center;background-size: 15px auto;padding-right: 13px;}
+    .vis-hd .custom-select.no-pc.selected>strong{background-position: right 15px center;}
+    .vis-hd .custom-select>strong{display: block;width: 100%;padding: 18px 15px;border-bottom: 1px solid #ccc !important;line-height: 1.2;height: auto;min-height: 0;box-sizing: border-box;font-size: 16px;}
+    .vis-hd .custom-select>strong:hover{color: #000;}
+    .vis-hd .custom-select.on>strong{background: #fff;color: #c4161c;}
+    .vis-hd .custom-select>strong>a, .mk-jobs.lang-vi .vis-hd .custom-select>strong>a, .mk-jobs.lang-en .vis-hd .custom-select>strong>a{padding: 0 10px 0 0 !important;font-size: 16px !important;display: inline-block;}
+    .vis-hd .custom-select>ul{position: static;display: block;width: 100%;padding: 0;box-shadow: none;border: 0;min-width: 0;border-bottom: 1px solid #ddd;display: none;}
+    .vis-hd .custom-select.on>ul{display: block;}
+    .vis-hd .custom-select:hover>ul{display: none;}
+    .vis-hd .custom-select.on>ul{display: block !important;}
+    .vis-hd .custom-select>ul>li{width: 33.33%;border-right: 0; margin: 0;padding: 0 3px 0;box-sizing: border-box;min-height: 95px;border-top: 0;}
+    .vis-hd .custom-select>ul>li:last-of-type{border-right: 1px solid #eee;}
+    .vis-hd .custom-select>ul.num2>li{width: 50%;border-bottom: 0;}
+    .vis-hd .custom-select>ul>li:nth-child(3n){border-right: 0;}
+    .vis-hd .custom-select>ul>li:nth-last-child(1){border-bottom: 0;}
+    .vis-hd .custom-select>ul>li>a{font-size: 14px;padding: 5px;border-bottom: 0;box-sizing: border-box;}
+    .custom-select>ul>li>a span{margin-bottom: 5px;}
+    .custom-select>ul>li>a span img{width: 55px;}
+    .custom-select>ul>li>a strong{font-size: 12px;word-break: keep-all;}
+    .vis-hd .custom-select>ul.full-list{padding: 15px 0;}
+    .vis-hd .custom-select>ul.full-list>li{display: block;width: 100%;border: 0;min-height: 0;padding: 0;}
+    .vis-hd .custom-select>ul.full-list>li>a{display: block;padding: 5px 25px;font-size: 15px;}
+    .vis-hd .custom-select.no-pc.selected>ul>li.on>a{color: #c4161c;}
+    .custom-select>ul>li>ul{position: static;width: 100%;margin: 0;padding: 0;background: #f8f8f8;padding: 10px 0;display: none;}
+    .custom-select>ul>li>ul>li>a{text-align: left;font-size: 15px;padding: 5px 30px;}
+    .custom-select>ul>li>ul>li>a:before{content: "";display: inline-block;width: 2px;height: 2px;background: #222;vertical-align: middle;margin-right: 4px;}
+
+    .custom-select>ul:not(.hover)>li.selected>a{font-size: 14px;background: none;}
+    .custom-select>ul>li:hover>a{font-size: 14px;background: none;font-weight: normal;color: #555;}
+    .m-scrl{height: calc(100% - 105px);overflow: auto;position: relative;-webkit-overflow-scrolling: touch;}
+    .m-scrl>div{position: relative;min-height: 100%;overflow: hidden;box-sizing: border-box;color: #555;}
+    .m-scrl .bt{display: block;position: absolute;bottom: 0px;left: 0;background: #fff;width: 100%;border-top: 1px solid #ddd;padding:10px 0 15px;}
+    .m-scrl .ic-job, .m-scrl .ic-learn{vertical-align: middle;margin: 0 0 5px 10px;color: #c4161c;font-size: 12px;border: 1px solid #c4161c;padding: 0 7px;display: inline-block;}
+    .m-scrl .tx{vertical-align: middle;}
+    .m-scrl .tx:before{content: "";display: inline-block;vertical-align: middle;width: 1px;height: 10px;margin: 0 10px;background: #ddd;}
+    .custom-select>ul>li>ul, .custom-select>ul>li:hover>a+ul, .custom-select>ul>li:hover>a+ul, .custom-select>ul:not(.hover)>li.selected>a+ul{display: none;}
+
+    .m-bt{clear: both;padding: 0 0 0;position: absolute;bottom: 0;left: 0;width: 100%;display: block;background: #fff;border: 1px solid #ddd;background: #eee;}
+    .m-bt>a{border: 1px solid #ccc;display: block;height: 30px;line-height: 30px;text-align: center;margin: 10px;background: #fff;width: 100px;float: right;color: #555;}
+    .m-bt ul, .m-menu-area ul{clear: both;font-size: 0;padding: 0 15px;margin-bottom: 15px;}
+    .m-menu-area ul{margin-bottom: 0;}
+    .m-menu-area ul li{width: 100%;}
+    .m-menu-area .bt ul{display: block !important;}
+    .m-menu-area .bt ul li{width: auto;}
+    .m-bt ul li, .m-menu-area .bt ul li{display: inline-block;color: #555;font-size: 12px;}
+    .m-bt ul li:not(:last-child):after, .m-menu-area .bt ul li:not(:last-child):after{content: "";background: #ddd;height: 10px;width: 1px;vertical-align: middle;display: inline-block;margin: 0 10px;}
+    .m-bt>p.t-gray{font-size: 11px;padding: 0 15px;margin-bottom: 3px;word-break: break-all;font-weight: 300;}
+    .m-bt>p.cp, .m-menu-area p.cp{font-size: 9px;padding: 0 15px;color: #aaa;font-weight: 300;padding-bottom: 20px;}
+    .m-menu-area p.cp{margin-bottom: 0;padding-bottom: 0;}
+    .m-bt>p.bg{background: #eee;overflow: hidden;}
+    .m-bt>p.bg>span{float: left;width: 50%;font-size: 16px;font-weight: 500;padding: 13px 20px;box-sizing: border-box;}
+    .m-bt>p.bg>span:first-child{text-align: left;}
+    .m-bt>p.bg>span:last-child{text-align: right;}
+    .m-bt>p.bg>span>a{font-size: 14px;text-align: center;font-weight: 500;line-height: 1;0display: inline-block;}
+    .m-bt>p.bg>span a.underline{text-decoration: underline;}
+    .m-bt>.ic{overflow: hidden;font-size: 0;}
+    .m-bt>.ic .ic01 strong{background: url("/theme/oklassedu/pix/images/icon_chat_gray.png") no-repeat left 15px center;;background-size: 25px auto;padding-left: 48px;display: inline-block;line-height: 21px;width: 96px;box-sizing: border-box;}
+    .m-bt>.ic .ic02 strong{background: url("/theme/oklassedu/pix/images/icon_m_facebook.png") no-repeat left 15px center;;background-size: 25px auto;padding-left: 50px;display: inline-block;}
+    .m-bt>.ic>span{display: block;width: 50%;float: left;padding: 20px 0;box-sizing: border-box;text-align: center;}
+    .m-bt>.ic>span>strong{font-size: 13px;font-weight: normal;display: block;line-height: 1.2;}
+    .m-bt>.ic>span>span{color: #555;font-size: 11px;display: inline-block;}
+    .m-bt>div{border-top: 1px solid #ddd;padding: 8px 15px;}
+    .m-bt>div>a{vertical-align: middle;display: inline-block;padding: 1px 0;margin-right: 5px;}
+    .m-bt>div>a>img{width: 25px;}
+    .m-bt>div>select, .mk-jobs .m-bt>div .mr-auto + select{float: right;width: 120px;height: 30px;line-height: 28px;font-size: 12px;}
+
+    .mk-jobs .m-bt>div .mr-auto a{display: inline-block;width: 25px;height: 25px;vertical-align: middle;margin-right: 5px;}
+    .mk-jobs .m-bt>div .mr-auto a:first-child{background: url(/theme/oklassedu/pix/images/icon_facebook_gray.png) no-repeat center;background-size: 25px auto;}
+    .mk-jobs .m-bt>div .mr-auto a:nth-child(2){background: url(/theme/oklassedu/pix/images/icon_youtube_gray.png) no-repeat center;background-size: 25px auto;}
+    .mk-jobs .m-bt>div .mr-auto a img{display: none;}
+
+
+    /*## main ##*/
+    .main-slider .sd .group{padding: 0 50px;margin-top: -10px;}
+    .main-slider.slick-slider{min-height: 220px;padding-bottom: 50px;background-size: 100px auto;}
+    .main-slider .sd .group>p{font-size: 24px;margin-bottom: 20px;line-height: 1.2;}
+    .main-slider .main-search{height: 36px;padding-right: 40px;margin-bottom: 9px;}
+    .main-search input[type=text]{padding: 3px 10px;font-size: 15px;}
+    .main-search input[type=text]::placeholder{font-size: 15px;}
+    .main-search input[type="submit"]{height: 36px !important;background: url("/theme/oklassedu/pix/images/icon_search_blue02.png") no-repeat center!important;background-size: 18px auto !important;width: 40px !important;min-width: 0 !important;}
+    .main-slider .hash-area > li{font-size: 12px;margin-bottom: 2px;}
+    .main-slider .slick-arrow, .main-slider .slick-arrow:hover{width: 32px;height: 32px;}
+    .main-slider .slick-prev{background: url("/theme/oklassedu/pix/images/icon_arrow_w_sm_l.png") no-repeat center !important;background-size: 8px auto !important;}
+    .main-slider .slick-next{background: url("/theme/oklassedu/pix/images/icon_arrow_w_sm_r.png") no-repeat center !important;background-size: 8px auto !important;}
+    .main-slider .slick-dots li{width: 8px;height: 8px;margin: 0 3px;}
+    .main-slider .slick-dots li button{width: 8px;height: 8px;background: #fff;opacity: 0.4;padding: 0;}
+    .main-slider .slick-dots li.slick-active button{opacity: 1;}
+    
+    .sub-menu{height: auto;}
+    .sub-menu.main .group{padding: 0;overflow: auto;max-width: 100%;}
+    .sub-menu .sub-menu-wrap .sub-list{width: 18.18%}
+    .sub-menu .sub-menu-wrap li .sub-menu-cnt span{font-size: 13px;display: block;padding-bottom: 15px;}
+    .sub-menu.main .sub-menu-wrap li .sub-menu-cnt{padding-bottom: 0;}
+    .sub-menu .sub-menu-wrap li .sub-menu-cnt img{width: 50px;}
+    
+    .learn-list .ls>span{display: block;font-size: 12px;margin-bottom: 3px;}
+
+    .ft-banner img{max-width: calc(100% - 1px);vertical-align: middle;height: auto;vertical-align: middle;}
+    .ft-banner img.ic-pc{display: none;}
+    .ft-banner img.ic-mobile{display: inline-block;}
+    .ft-banner{height: 50px;font-size: 0;bottom: 0px;}
+    .on-button .ft-banner{bottom: 45px;}
+    .ft-banner:before{content: "";width: 1px;height: 50px;display: inline-block;vertical-align: middle;}
+    body .main-contents .white-area.scd{padding-bottom: 40px;}
+    body.is-banner .white-area.scd{padding-bottom: 130px;}
+    
+    .main-contents .white-area.hasbx.login .group{padding: 0 0 0;}
+    .main-contents .white-area.hasbx .group .login-area{display: none;}
+    
+    /*## footer ##*/
+    .vis-footer{background: #f0f0f0;padding: 0 ;text-align: center;}
+    .vis-footer .group{padding: 0;}
+    .vis-footer .ft-logo{display: none;}
+    .vis-footer .tp{margin-bottom: 0;}
+    .vis-footer .tp .lnk{background: #fff;margin-bottom: 20px;}
+    .vis-footer .tp .lnk>li{margin: 0;padding: 10px 0;}
+    .vis-footer .tp .lnk>li:not(:last-child):after{content: "";display: inline-block;height: 13px;width: 1px;background: #ddd;margin: 0 7px;}
+    .vis-footer .tp .lnk>li a{font-size: 13px;color: #555;font-weight: 500;letter-spacing: -0.5px;}
+    .vis-footer .tp p{padding: 0 10px;color: #888;font-size: 12px;word-break: keep-all;}
+    .vis-footer .tp p.copy{font-size: 10px;color: #aaa;margin-bottom: 15px;}
+    
+    .m-fixed-menu{display: block;}
+    /*#######################
+    ##       contents
+    #########################*/
+    /*## 썸네일 ##*/
+    .thumb-list li{width: 33.33%;}
+
+    /*## 강좌 상세 ##*/
+    .badge-alarm{font-size: 14px;}
+    .crs-img {width: 430px;height: 243px;margin-right: 20px;}
+    .course-info .crs-txt{width: calc(100% - 450px);padding-top: 0;}
+    .course-info .crs-txt .tit{font-size: 23px;}
+    .course-info .crs-txt>ul>li{margin-bottom: 4px;}
+    .course-info .crs-txt>ul>li>span, .course-info .crs-txt>ul>li>strong{font-size: 14px;line-height: 1.5;font-weight: normal;}
+    .course-info .crs-txt>ul>li>span{font-size: 13px;}
+    .page-nav>.sub-mn>ul>li:hover>ul{display: none;}
+    .page-nav>.sub-mn>ul>li.on>ul{display: block;}
+
+    /*## 교제 상세 ##*/
+    .bk-detail .bk-img {width: 340px;height: 465px;margin-right: 20px;}
+    .bk-detail .bk-txt{width: calc(100% - 360px);}
+
+    /*## 내정보 ##*/
+    .my-box.half{padding: 20px 0 0px;}
+    .my-box.half .rw{padding: 0 20px;box-sizing: border-box;}
+    .my-box.half .my-crs-list{position: static;width: 100%;clear: both;border: 0;border-top: 1px solid #ddd;}
+
+    /*## 전체검색 ##*/
+    .tp-search-area{top: 50px;padding-top: 35px;padding-bottom: 35px;}
+
+    /*## 이벤트페이지 ##*/
+    .img-grp .wrp img.bg.m-show{display: block;}
+    .img-grp .wrp img.bg.m-hide{display: none;}
+    .img-grp .wrp .link-tp{display: none;}
+
+    .mk-jobs.jobs-site .img-grp{margin-top:50px;}
+    
+    /*## 마이페이지 - 내정보 ##*/
+    .my-box.half .rw .btns{top: -5px;right: 10px;}
+
+    /*## 강의실 ##*/
+    .crs-left-block .m-btn-area{display: block;}
+    /*#######################
+    ##   구인구직 모바일
+    #########################*/
+
+    /*## 이력서관리 상세 ##*/
+    .my-box.imprt.resume .f-l .rw{width: 100%;margin-left: 0 !important;}
+    .my-box.bx-inline.resume .rw{width: 100%;margin-left: 0 !important;}
+    .my-box.move.resume>div>*{min-width: 100%;margin-left: 0 !important;}
+    .my-box.move.resume>div>*:not(:last-child){margin-bottom: 10px;}
+    .my-box.move.resume>div.add-bx-wrap{width: 100%;}
+    .my-box.move.resume>div .dt-grp{margin-bottom: 10px;}
+
+    /*## 대시보드 ##*/
+    .cont>.center-tit{margin-top: 0;}
+    .dhboard-list li .dash-num{font-size: 50px;}
+    .dhboard-list li>p{font-size: 16px;}
+
+    /*## 채용공고 목록 ##*/
+    table thead tr th.th-sort{white-space: normal;}
+    .table > tbody > tr > td{word-break: break-all;}
+
+    /*## 내정보 ##*/
+    .my-box.jobs .half{width: 100%;}
+    .my-box.jobs .half:first-child .rw:not(:last-child){margin-bottom: 17px;}
+    .my-box.jobs .half:last-child{border: 0;border-top: 1px solid #ddd;}
+    .my-c-info-num>li{margin: 0 30px;}
+    .resume-bx>ul{padding-left: 70px;background-position: left top 10px;background-size: 60px auto;}
+
+    /*## 이력서 관리 ##*/
+    .block-bx{margin: 0 -6px;}
+    .block-bx>li{width: calc(50% - 12px);margin: 0 6px 12px;}
+
+
+    /*## 지원자 목록 ##*/
+    .list-num.clearfix{margin-bottom: 10px;padding-top: 32px;position: relative;}
+    .list-num .ck-btns .custom-ck{position: absolute;top: 0;right: 0;}
+    .talent-list.has-check>li{padding-left: 45px;}
+    .talent-list.has-check>li .custom-ck{top: 15px;transform: translate(0,0);left: 12px;}
+    .custom-ck span:before, .custom-ck input:checked+span:before{background-size: 17px auto;width: 17px;height: 17px;}
+
+    /*## 이력서관리 상세팝업 ##*/
+    .resume-inf-bx{padding: 20px 20px 15px;;}
+    .resume-inf-bx .tit{font-size: 18px;padding-bottom: 10px;margin-bottom: 15px;}
+    .resume-inf-bx.first .tit{font-size: 23px;padding-bottom: 12px;margin-bottom: 15px;}
+    .resume-inf-bx.first .tit .f-r{float: none;text-align: right;margin-bottom: 10px;}
+    .resume-inf-bx.first .tit .f-r .btns{height: 35px;line-height: 33px;min-width: 100px;font-size: 15px;}
+    .resume-inf-bx.first .tit .btns.ic-print:before{background-size: 14px auto;width: 14px;}
+    .resume-inf-bx.first .txt>.rw{width: 100%;}
+    .resume-inf-bx.first .u-img{width: 100px;height: 100px;margin-right: 20px;}
+    .resume-inf-bx.first .txt>.rw{margin-bottom: 7px;}
+    .resume-inf-bx .txt>.rw span, .resume-inf-bx .txt>.rw strong{font-size: 14px;}
+    .resume-inf-bx div.rw>p:first-child{width: 100%;margin-bottom: 5px;}
+    .resume-inf-bx div.rw>p:last-child, .resume-inf-bx div.rw>div:last-child{width: 100%;}
+    .resume-inf-bx .rw .history>strong{min-width: 0;}
+    .resume-inf-bx .rw .inline-b>span:not(:last-child):after{margin: 0 5px;height: 10px;margin-top: -3px;}
+    .resume-inf-bx .rw .t-dot{font-size: 14px;}
+    .resume-inf-bx .rw p.w100.t-dot span:not(:last-child):after{height: 10px;margin: 0 5px;}
+    .resume-inf-bx .bdg-area{padding: 15px;}
+    .resume-inf-bx .bdg-area>.t-blue02{font-size: 16px;}
+    .resume-inf-bx .bdg-area>table td img{width: 20px;}
+    .resume-inf-bx .bdg-area>table td{font-size: 14px;padding: 5px;}
+    .resume-inf-bx .bdg-area>table td p{font-size: 14px;}
+    .file-list>li{font-size: 14px;}
+    .file-list>li>a{background-size: 16px auto;padding-left: 23px;}
+    .resume-inf-bx .txt>.rw.bt-br:not(:last-child){padding-bottom: 15px;margin-bottom: 15px;}
+    .my-box.bg .sub-tit{font-size: 18px;}
+
+
+    /*## 인재검색 ##*/
+    .ck-scrl-bx{margin-bottom: 20px;}
+    .ck-scrl-bx>.bx{width: 100%;border-top-color: #aeafb2;margin-bottom: -1px;}
+    .ck-scrl-bx>.bx .bx-th{border-right: 0;padding: 7px;background: #f4f4f4;}
+    .ck-scrl-bx>.bx .bx-scrl{height: auto;border-right: 0;}
+    _:-ms-fullscreen, :root .ck-scrl-bx .bx .bx-scrl{height: auto;border-right: 0;}
+    .ck-scrl-bx>.bx .bx-scrl{padding: 5px 0;font-size: 0;}
+    .ck-scrl-bx>.bx .bx-scrl>p{display: inline-block;padding: 2px 7px;border: 0;width: 33.33%;box-sizing: border-box;}
+    .ck-scrl-bx>.bx .custom-ck span:before{background-size: 17px auto;margin-right: 4px;}
+    .talent-list>li{padding: 15px;}
+    .talent-list>li .t-img{width: 60px;height: 60px;}
+    .talent-list>li .t-img .ic-heart{background-size: 20px auto !important;left: 50%;top: 100%;margin-left: -10px;width: 20px;margin-top: 3px;}
+    .talent-list>li .t-img .ic-play{width: 24px;height: 24px;margin: -12px 0 0 -12px;background-size: 8px auto;background-position: left 9px center;}
+    .talent-list>li .t-u-info{min-height: 0;width: calc(100% - 70px);margin: 0 0 5px;overflow: hidden;}
+    .talent-list>li .t-u-info>*{display: inline-block;}
+    .talent-list>li .t-u-info strong{margin-top: 0;font-size: 14px;}
+    .talent-list>li .t-u-info .t-blue02{font-size: 14px;}
+    .talent-list>li .t-u-info .ic-badge{font-size: 12px;background-size: 15px auto;padding-top: 0;background-position: top left;padding-left: 18px;margin-top: 0;height: 20px;margin-left: 2px;}
+    .talent-list>li .t-c-info{width: calc(100% - 70px);padding-right: 0;}
+    .talent-list>li .t-c-info .tit{font-size: 16px;margin-bottom: 15px;}
+    .talent-list>li .t-c-info>p>span{font-size: 13px;}
+    .talent-list>li .t-c-info>p>span:not(:last-child):after{margin: 0 7px;height: 12px;}
+    .talent-list>li .t-right{margin-top: 10px; width: calc(100% - 70px);padding: 0;text-align: left;}
+    .talent-list>li .t-c-info>p{font-size: 12px;margin-bottom: 8px;}
+    .talent-list>li .t-right>span{display: iblock;text-align: left;margin-bottom: 5px;}
+    .ck-btns{text-align: center;}
+    .ck-btns .custom-ck{display: block;margin: 0 0 10px;}
+    .ck-btns .f-r + .custom-ck{clear: both;text-align: right;line-height: 1.2;}
+    .talent-list>li .t-right.no-pd select{font-size: 13px;margin: 0;height: 28px;margin-left: 5px;}
+
+
+
+    /*#######################
+    ##       footer
+    #########################*/
+    .m-ft-link{display: table;display: none;height: 45px;width: 100%;position: fixed;bottom: 0;left: 0;z-index: 99}
+    .m-ft-link>li{display: block;width: 50%;height: 100%;vertical-align: middle;text-align: center;float: left;line-height: 45px;}
+    .m-ft-link>li>a{text-align: center;display: block;font-size: 16px;}
+    .m-ft-link>li:first-child{background: #3c4ca5;color: #fff;}
+    .m-ft-link>li:last-child{background: #f0f0f0;color: #000;}
+    .mk-jobs .m-ft-link>li:first-child{background: #f0f0f0;color: #000;}
+    .mk-jobs .m-ft-link>li:last-child{background: #3c4ca5;color: #fff;}
+    body .cont .group{padding-bottom: 20px;}
+    body.on-button .cont .group{padding-bottom: 50px;}
+
+    #page-local-event-20_march_open_event_job .m-ft-link>li:last-child{background: #3c4ca5;color: #fff;}
+    #page-local-event-20_march_open_event_job .m-ft-link>li:first-child{background: #f0f0f0;color: #000;}
+    .evt-page .m-ft-link>li:last-child a:after{content: "";display: inline-block;background: url(/theme/oklassedu/pix/images/icon_cursor.png) no-repeat center;width: 22px;height: 27px;background-size: 24px auto;vertical-align: middle;margin-left: 5px;}
+}
+
+@media screen and (max-width:768px){
+    .m-block{display: block;}
+    .m-w100{width: 100%;}
+
+    body.noScroll:not(.mobile) .vis-hd, body[style*="hidden"] .vis-hd{right: 0;}
+    body.noScroll:not(.mobile){padding-right: 0 !important;}
+
+    .floating-menu{right: 15px;}
+
+    /*## header ##*/
+
+    .vis-hd .f-r > div.alram .alram-list{position: fixed;right: auto;left: 0;top: 50px;width: 100%;padding-bottom: 44px;}
+    .vis-hd .f-r > div.alram .alram-list li{padding: 20px 30px 20px 20px;}
+    .vis-hd .f-r > div.alram .alram-list li .close-al{background-size: 17px auto;right: 10px;top: 15px;}
+    .vis-hd .f-r > div.alram .alram-list li > div{font-size: 17px;margin-bottom: 10px;}
+    .vis-hd .f-r > div.alram .alram-list li > p{font-size: 14px;margin-bottom: 5px;}
+    .vis-hd .f-r > div.alram .alram-list li span{font-size: 13px;}
+    .vis-hd .f-r > div.alram .alram-list .all-btn{padding: 10px;font-size: 16px;}
+
+    /*## main ##*/
+    .sub-menu.main{padding: 0;margin-bottom: 10px;}
+    .sub-menu.main .sub-list.slick-slide{width: auto;}
+    .sub-menu .sub-menu-wrap li .sub-menu-cnt span{font-size: 11px;padding-bottom: 10px;}
+
+    .main-contents .group{padding: 0 15px;}
+    .main-contents .white-area.hasbx .group{padding: 15px 0 0;}
+    .main-contents .bg-area{padding: 20px 0 5px;background: #fff;}
+    .main-contents .bg-area.scd{padding: 20px 0;background: #fff;}
+    .main-contents .white-area{padding: 0 0 10px;}
+    .main-contents .white-area.hasbx + .white-area{padding-top: 25px;}
+    .main-contents .white-area .login-area span{display: block;font-size: 20px;line-height: 1.3;margin-bottom: 10px;}
+    body .main-contents .white-area.scd{background: #fff;}
+    .learn-list .slick-prev{left: 15px;}
+    .learn-list .slick-next{right: 15px;}
+    
+    .main-contents .pg-tit{font-size: 16px;margin-bottom: 7px;line-height: 1.3;}
+    .main-contents .bg-area .pg-tit{padding-right: 50px;}
+    .main-contents .pg-tit .mr{display: none;}
+    .cmpny-bx{display: block;}
+    .cmpny-bx li{width: 100%;display: block;box-sizing: border-box;border: 1px solid #f2f3f5 !important;margin: 2px 0;padding: 0;overflow: hidden;}
+    .cmpny-bx.slider li{border: 1px solid #f2f3f5 !important;}
+    .cmpny-bx li .lg{width: 115px;float: left;margin-bottom: 0;height: 115px;}
+    .cmpny-bx li .lg img{max-width: 80%;height: auto;vertical-align: middle;}
+    .cmpny-bx li .lg:before{content: "";display: inline-block;height: 115px;vertical-align: middle;}
+    .cmpny-bx li .tx{float: left;width: calc(100% - 115px);padding: 20px 15px;box-sizing: border-box;}
+    .cmpny-bx li .tx>strong{font-size: 13px;line-height: 16px;height: 32px;}
+    .cmpny-bx li .tx>span{font-size: 16px;margin-bottom: 0;line-height: 20px;height: 40px;}
+    .cmpny-bx.slider{border: 0;}
+    .cmpny-bx.slider .slick-arrow{top: -43px;margin-top: 0;background-size: 7px auto !important;width: 25px;height: 25px;background-color: #fff !important;border: 1px solid #ccc;}
+    .cmpny-bx.slider .slick-prev{left: auto;right: 25px;border-radius: 3px 0 0 3px;border-right: 0;background-image: url(/theme/oklassedu/pix/images/icon_arrow_l.png);}
+    .cmpny-bx.slider .slick-next{right: 0px;border-radius: 0 3px 3px 0;    background-image: url(/theme/oklassedu/pix/images/icon_arrow_r.png);}
+    .thumb-list > li .star-area > span{font-size: 11px;letter-spacing: -0.5px;margin-left: -2px;}
+    .main-contents .white-area.scd{padding: 20px 0;}
+
+    .main-contents .white-area.hasbx{background: #fff;padding-bottom: 0px;}
+    .learn-list .ls{padding: 0 50px;}
+    .learn-list .ls>strong{font-size: 17px;display: block;margin-bottom: 12px;margin-right: 0;max-width: 100%;}
+    .learn-list .ls .btns{height: 33px;line-height: 32px;min-width: 100px;font-size: 12px;}
+    .learn-list .slick-arrow{background-size: 10px auto !important;padding: 0;width: 14px !important;}
+
+    .main-contents .thumb-list li{margin-bottom: 15px;}
+    /*    .main-contents .thumb-list li:nth-last-child(1){margin-bottom: 0;}
+        .main-contents .thumb-list li:nth-last-child(2){margin-bottom: 0;}*/
+    /*    .main-contents .thumb-list li:nth-last-child(2n + 1){clear: both;float: left;}*/
+
+    .noti-list{padding: 0;}
+    .noti-list li>strong{font-size: 0;background-size: 35px auto;width: 35px;padding: 5px 0;}
+    .noti-list li{padding: 14px 75px 14px 45px;}
+    .noti-list li .info{padding: 14px 0;}
+    .noti-list li .info span{font-size: 14px;}
+    .noti-list li .info span:first-child, .noti-list li .info .dt:before{display: none;}
+    .noti-list li>a{font-size: 14px;}
+    .noti-list li>strong:before{background-size: 16px auto;}
+
+    /*#######################
+    ##       contents
+    #########################*/
+    .cont .group{padding: 15px 15px;}
+    .crs-right-block{width: 100%;}
+    h2.pg-tit{font-size: 20px;margin-bottom: 15px;}
+    h4.pg-tit{font-size: 16px;margin-bottom: 13px;}
+    h5.pg-tit{font-size: 15px;margin-bottom: 13px;}
+    .pg-tit .mr_all{margin-top: 0;}
+    .pg-tit.has-star{font-size: 18px;line-height: 1.2;margin-bottom: 15px;}
+    .pg-tit .btns.f-r.m-w100{margin-top: 10px;}
+
+    .crs-left-block{width: 100%;}
+    .crs-left-block>ul{width: 100%;overflow: hidden;border: 1px solid #eee;margin-bottom: 30px;}
+    .crs-left-block ul li{float: left;min-width: 0;}
+    body:not(.course-layout) .crs-left-block>ul>li{width: 25%;}
+    .crs-left-block ul li a{padding: 10px;font-size: 15px;border-bottom: 0;}
+    .crs-left-block ul li.on a{background: none; color: #c4161c ;padding-right: 10px;}
+    .crs-left-block ul li.on a .ic-new{background: #c4161c url(/theme/oklassedu/pix/images/icon_new_mobile.png) no-repeat center;background-size: 8px auto !important;} 
+
+    .crs-left-block>ul.slick-slider, body:not(.course-layout) .crs-left-block>ul{margin: -15px -15px 0;width: auto;margin-bottom: 20px;border-bottom: 1px solid #ddd;padding: 0 27px;box-sizing: border-box;height: 50px}
+    .crs-left-block>ul.slick-slider .slick-arrow{height: 100%;width: 27px;}
+    .crs-left-block>ul.slick-slider .slick-arrow.slick-disabled{opacity: 0.4;}
+    .crs-left-block>ul.slick-slider .slick-prev{background: url("/theme/oklassedu/pix/images/icon_arrow_l.png") no-repeat center;left: 0;}
+    .crs-left-block>ul.slick-slider .slick-next{background: url("/theme/oklassedu/pix/images/icon_arrow_r.png") no-repeat center;right: 0;}
+
+    .crs-left-block>ul.slick-slider li a, body:not(.course-layout) .crs-left-block>ul>li>a{padding: 13px 5px;display: block;text-align: center;font-size: 14px;letter-spacing: -0.5px;background-color: #fff !important; color: #333;}
+    .crs-left-block>ul.slick-slider li.on a, body:not(.course-layout) .crs-left-block>ul>li.on>a{color: #c5161c;font-weight: 500;} 
+    body:not(.course-layout) .lang-en .crs-left-block ul li a, body:not(.course-layout).lang-vi .crs-left-block ul li a{font-size: 13px !important;}
+    .m-hide{display: none !important;}
+    .m-show{display: block !important;}
+    .m-show.inline{display: inline-block!important;margin-right: 2px;}
+
+    .page-nav{margin-bottom: 15px;}
+    .page-nav.has-icon{padding-right: 0;}
+    .page-nav>p{line-height: 1.2;font-size: 16px;}
+    .page-nav>p:not(:last-child):after{width: 12px;height: 12px;}
+    .page-nav>.sub-mn{margin-left: 10px;}
+    .page-nav>.sub-mn>span{background-size: 17px auto;width: 23px;height: 23px;}
+    .page-nav.tit{z-index: 1;border-bottom: 1px solid #aaa;padding-bottom: 15px;margin-bottom: 6px;padding-right: 0;float: left;width: 100%;}
+    .page-nav.tit>p{font-size: 14px;line-height: 1.2;display: block;float: left;}
+    .page-nav.tit>p:not(:first-child):before{background-size: 6px auto;height: 13px;}
+    .page-nav.tit .mr{clear: both;border: 0;font-size: 12px;background-size: 10px auto;background-position: left center;padding-left: 12px;width: auto;height: auto;position: static;}
+
+
+    .btns.big02{min-width: 100px;font-size: 18px !important;height: 45px;line-height: 43px;}
+
+    .mk-paging>li>a{width: auto;height: auto;margin: 3px;line-height: 25px;border: 0;font-size: 15px;}
+    .mk-paging>li.first>a,.mk-paging>li.end>a, .mk-paging>li.prev>a, .mk-paging>li.next>a {width: 27px;height: 27px;margin: 3px 0;}
+
+    .no-data.style02{padding: 15px 0;}
+    .no-data div{font-size: 17px;margin-bottom: 0px;}
+    .no-data.style02 .btns.arrow{font-size: 15px;height: 35px;line-height: 33px;padding: 0 28px 0 15px;background-position: right 10px center !important;}
+
+
+
+    /*## 썸네일 ##*/
+    .thumb-list {margin: 0 -7px;}
+    .thumb-list li{width: 50%;padding: 0 7px;}
+    .thumb-list.style04 li{margin-bottom: 15px;}
+    .thumb-list.style04 li .ic-heart{width: 40px;height: 40px;right: -10px;}
+    .thumb-list.style03.brd>li>.wp .txt{min-height: 0;}
+    .thumb-list.style03.brd>li>.wp .txt .tit{font-size: 15px;line-height: 18px;height: 36px;}
+    .thumb-list.style03.brd>li{margin-bottom: 10px;}
+    .thumb-list.style03 li .img .ic-label{padding: 3px;font-size: 12px;}
+    .thumb-list.style01 li .tp{padding: 20px 13px;}
+    .thumb-list.style01 li .ic-like{width: 30px;height: 30px;background: #fff url(/theme/oklassedu/pix/images/icon_heart02_on.png) no-repeat center;background-size: 14px auto !important;top: -8px;right: -2px;}
+    .thumb-list.style01 li .ic-like:not(.on){background: #fff url("/theme/oklassedu/pix/images/icon_heart_big.png") no-repeat center;}
+    .thumb-list.style01 li .tp .tit{font-size: 14px;line-height: 18px;height: 18px;margin-bottom: 3px;}
+    .thumb-list.style01 li .tp > p{font-size: 12px;margin-bottom: 13px;}
+    .thumb-list.style01.slider{margin: 0 -5px;}
+    .thumb-list.style01.slider li{padding-top: 11px;}
+    .mk-jobs .thumb-list.style01.slider li{padding-top: 0;}
+    .thumb-list.style01.slider .slick-arrow{top: -37px;margin-top: 0;background-size: 7px auto !important;width: 25px;height: 25px;background-color: #fff !important;border: 1px solid #ccc;}
+    .thumb-list.style01.slider .slick-prev{left: auto;right: 28px;border-radius: 3px 0 0 3px;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_l.png") no-repeat center !important;background-size: 7px auto !important;}
+    .thumb-list.style01.slider .slick-next{right: 3px;border-radius: 0 3px 3px 0;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_r.png") no-repeat center !important;background-size: 7px auto !important;}
+    .main-contents .thumb-list.slider{margin: 0 -5px;}
+    .main-contents .thumb-list.slider li{padding-top: 11px;}
+    .mk-jobs .main-contents .thumb-list.slider li{padding-top: 0;}
+    .main-contents .thumb-list.slider .slick-arrow{top: -33px;margin-top: 0;background-size: 7px auto !important;width: 25px;height: 25px;background-color: #fff !important;border: 1px solid #e2e2e2;}
+    .main-contents .thumb-list.slider .slick-disabled{opacity: 0.2;}
+    .main-contents .thumb-list.slider .slick-prev{left: auto;right: 28px;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_l.png") no-repeat center !important;background-size: 7px auto !important;}
+    .main-contents .thumb-list.slider .slick-next{right: 3px;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_r.png") no-repeat center !important;background-size: 7px auto !important;}
+    .thumb-list > li .star-area > span{font-size: 11px;letter-spacing: -0.5px;margin-left: -2px;}
+    .thumb-list li .star-area .ic-heart{margin-left: 3px;background-position: top left 7px !important;padding-left: 22px;}
+    .star-event > span{background-size: 10px auto !important;padding-right: 0px;width: 12px;}
+    .thumb-list:not(.style04) > li .ic-heart{background-size: 9px auto !important;background-position: left 5px center !important;padding-left: 20px;margin-left: 3px;height: 10px;line-height: 10px;font-size: 11px;display: inline-block;}
+    .thumb-list li .price{font-size: 13px;padding-top: 22px;}
+    .thumb-list li .price .p-down{font-size: 11px;top: 5px;}
+    .thumb-list li .price .p-down span:first-child{font-size: 10px;background-position: top 4px center;padding: 0 3px;}
+    
+    .thumb-list li .wp .best {background-size: 30px auto;width: 30px;height: 40px;top: 2px;right: 0px;}
+    .thumb-list.style02 li .wp .img .bg-tit{padding: 20px 10px 10px;font-size: 12px;}
+    .thumb-list li .wp .img .dw{height: 25px;line-height: 25px;width: 60px;font-size: 13px;}
+    .thumb-list li .wp .img .dw:after{font-size: 12px;}
+    .thumb-list.style02 li .wp .img .bg-tit strong{font-size: 14px;}
+    .thumb-list.style02 li .wp .txt{padding: 10px;}
+    .thumb-list.style02 li .wp .txt .tit{font-size: 13px;line-height: 16px;}
+    .thumb-list.style02 li .wp .txt .price{font-size: 14px;padding-top: 13px;}
+    .thumb-list.style02 li .price>span{font-size: 12px;color: #888;}
+    .thumb-list.style02 li .bt{font-size: 13px;margin-top: 15px;height: 33px;line-height: 31px;}
+    .thumb-list.style02 li .price .p-down{top: 0;}
+
+    
+    /*## 강좌 상세 ##*/
+    .page-nav{position: relative;z-index: 3;}
+    .page-nav>p:not(:first-child):before{margin: -3px 5px 0;background-size: 6px auto;}
+    .page-nav>.sub-mn{position: static;}
+    .page-nav>.sub-mn>ul{left: 0;right: 0;min-width: 0;top: 100%;margin-top: 10px;padding: 20px 45% 20px 20px;}
+    .page-nav>.sub-mn>ul>li>ul{width: 45%;padding: 20px 0;}
+    .page-nav>.sub-mn>ul>li>ul>li>a{font-size: 14px;}
+    .page-nav>.sub-mn>ul>li>a{font-size: 15px;padding: 10px 17px 10px 0px;background-size: 10px auto;}
+    mn>ul>li:not(.bt):hover>a {background: none;color: #fff;}
+    .page-nav>.sub-mn>ul:not(.hover)>li.selected>a{background-size: 8px auto;}
+    .page-nav>.sub-mn>ul>li:hover>ul{display: none;}
+    .page-nav>.sub-mn>ul>li.on>ul{display: block;}
+
+    .cont .group.c-detail{padding-bottom: 0 !important;}
+    .lang-en .sel-crs-list .bt.gray, .lang-en .sel-crs-list .bt.gray:hover, .lang-en .sel-crs-list .bt.gray:focus, .lang-vi .sel-crs-list .bt.gray, .lang-vi .sel-crs-list .bt.gray:hover, .lang-vi .sel-crs-list .bt.gray:focus{font-size: 14px;padding-top: 4px;letter-spacing: -1px;}
+    .sel-crs-list .group{padding: 0;}
+    .sel-crs-list .bt-grp{position: absolute;}
+
+    .course-info{margin-bottom: 20px;}
+    .course-info .m-tit{display: block;font-size: 18px;padding-bottom: 32px;position: relative;}
+    .course-info .m-tit .star-area{position: absolute;left: 0;bottom: 10px;}
+    .course-info .m-tit .star-area .star-event{display: inline-block;}
+    .course-info .m-tit .star-area span{font-size: 12px;font-weight: 300;vertical-align: middle;}
+    .course-info .m-tit .f-r{position: absolute;right: 0;bottom: 10px;}
+    .course-info .m-tit .f-r a{font-size: 0;width: 23px;height: 23px;display: inline-block;}
+    .course-info .m-tit .f-r .ic-heart{background: url("/theme/oklassedu/pix/images/icon_heart03.png") no-repeat center;background-size: 22px auto;}
+    .course-info .m-tit .f-r .ic-heart.on{background: url("/theme/oklassedu/pix/images/icon_heart02_on.png") no-repeat center;background-size: 22px auto;}
+    .course-info .m-tit .f-r .ic-share{background: url("/theme/oklassedu/pix/images/icon_facebook_big.png") no-repeat center;background-size: 29px 29px;background-size: 22px auto;}
+    .course-info .m-tit .star-area span.gray{color: #888;}
+    .course-info .crs-img{width: 100%;height: 0;margin: 0;padding-top: 56%;}
+    .course-info .crs-img>*:not(.play):not(.crs-cmt){position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
+    .course-info .crs-img img{display: block;height: auto;}
+    .course-info .play{display: none;}
+    .course-info .play>span{width: 60px;height: 60px;background-size: 18px auto;background-position: left 23px center;}
+    .course-info .play>a{font-size: 14px;margin-top: 5px;}
+    .course-info .crs-txt{padding: 15px 0 0;}
+    .course-info .crs-txt .tit{font-size: 20px;line-height: 1.2;display: none;}
+    .course-info .crs-txt{width: 100%;box-sizing: border-box;}
+    .course-info .crs-txt .star-area{margin-bottom: 15px;}
+    .course-info .bg{display: none;}
+
+    .sel-crs-list{position: fixed;bottom: 27px;left: 0;z-index: 9;width: 100%;z-index: 2;padding:  20px 15px;padding-top:60px;transition: height 0.3s;height: 0;box-sizing: border-box;background: #f8f8f8;border-top:1px solid #c5161d;}
+    .on-button .sel-crs-list{bottom: 27px;}
+    .on-button .sel-crs-list.on{padding-bottom: 105px;}
+    .sel-crs-list.on{padding-top: 20px;padding-bottom: 105px;height: auto;bottom: 0;}
+    .sel-crs-list>.m-arrow{cursor: pointer;background: url("/theme/oklassedu/pix/images/icon_m_pay_arrow_up.png") no-repeat center;position: absolute;top: -18px;left: 50%;border-bottom: 0;margin-left: -30px;box-sizing: border-box;background-size: 68px auto;width: 68px;height: 21px;}
+    .sel-crs-list.on>.m-arrow{background-image:  url("/theme/oklassedu/pix/images/icon_m_pay_arrow.png")}
+    .sel-crs-list .info{font-size: 12px;margin-bottom: 10px;font-weight: 300;}
+    .sel-crs-list ul{width: 100%;padding: 0;border: 1px solid #ddd;background: #fff;padding: 13px 18px;height: auto;}
+    .sel-crs-list ul li{font-size: 12px;margin-bottom: 5px;color: #888;}
+    .sel-crs-list ul li span{min-width: 35px;}
+    .sel-crs-list ul li strong{font-size: 13px;color: #333;width: calc(100% - 35px);}
+    .sel-crs-list .price{width: 100%;margin: 0;font-size: 16px;padding-bottom: 0;padding-top: 5px}
+    .sel-crs-list .price>span{display: inline-block;margin-top: -3px;}
+    .sel-crs-list .price span{vertical-align: middle;font-size: 12px;}
+    .sel-crs-list .price .p-down{display: inline-block;vertical-align: middle;font-size: 13px;margin-right: 20px;}
+    .sel-crs-list .price .p-down span{font-size: 11px;}
+    .sel-crs-list .price .p-down span:first-child{font-size: 13px;background-position: top 6px center;padding-right: 5px;margin-right: 0;}
+    .sel-crs-list .bt,.sel-crs-list .bt:hover{position: fixed;left: 15px;bottom: 57px;margin: 0;height: 42px;line-height: 42px;font-size: 15px;font-weight: 500;width: calc(100% - 30px);background: #c5161d;padding-top: 0;margin-bottom: 0 !important;}
+    .on-button .sel-crs-list .bt, .on-button .sel-crs-list .bt:hover{bottom: 55px;}
+    .sel-crs-list .bt-grp .bt.gray,.sel-crs-list .bt-grp .bt.gray:hover{width: calc(100% - 30px);}
+    .sel-crs-list .bt.gray, .sel-crs-list .bt.gray:hover, .sel-crs-list .bt.gray:focus{padding-top: 3px;}
+
+    .sel-crs-list .bt-grp .bt,.sel-crs-list .bt-grp .bt:hover{width: calc(50% - 17px);font-size: 15px;font-weight: 500;}
+    .sel-crs-list .bt.br,.sel-crs-list .bt.br:hover{left: 50%;margin-left: 4px;}
+
+
+    .fixed-tab .crs-tab{top: 50px;width: calc(100% - 30px);}
+    .crs-tab{padding: 0 20px;border-bottom: 1px solid #e6e7e8}
+    .crs-tab li{border: 0;font-size: 15px;}
+    .crs-tab li.on {color: #c5161d;font-weight: normal;}
+    .crs-tab .slick-arrow{min-width: 0;}
+    .crs-tab .slick-arrow.slick-disabled{opacity: 0.3;transition: opacity 0.3s;}
+    .crs-tab .slick-next, .crs-tab .slick-next:hover{z-index: 1;right: -1px;top: 0;transform: translate(0, 0);height: 61px;width: 20px;background: url(/theme/oklassedu/pix/images/icon_arrow_r.png)no-repeat center !important;}
+    .crs-tab .slick-prev, .crs-tab .slick-prev:hover{z-index: 1;left: -1px;top: 0;transform: translate(0, 0);height: 61px;width: 20px;background: url(/theme/oklassedu/pix/images/icon_arrow_l.png)no-repeat center !important;}
+    .slick-prev:before{display: none;}
+    .slick-next:before{display: none;}
+    .crs-tab .slick-next button{display: block;height: 100%;width: 100%;}
+    .crs-tab-cont{margin-bottom: 20px;}
+    .crs-tab-cont>div{padding: 15px;}
+    .crs-tab-cont>div h6{font-size: 18px;margin-bottom: 15px;}
+    .crs-tab-cont>div .bx .tit{font-size: 15px;}
+    .crs-tab-cont .teacher-bx .f-r .bx .tit{font-size: 16px;}
+    .crs-tab-cont>div .bx{margin-bottom: 10px;}
+    .crs-tab-cont .teacher-bx .f-l{width: 100%;text-align: center;max-width: 240px;margin: 0 auto;float: none;}
+    .crs-tab-cont .teacher-bx .f-r{width: 100%;}
+    .crs-tab-cont .teacher-bx .f-l img{height: auto;margin-bottom: 14px;}
+    .crs-tab-cont .teacher-bx .f-l p strong{font-size: 18px;}
+    .crs-tab-cont .teacher-bx .f-l p{font-size: 15px;}
+    .crs-tab-cont .teacher-bx .f-l p.small{font-size: 14px;margin-top: 8px;margin-bottom: 15px;}
+    .crs-tab-cont .teacher-bx .grp{padding: 20px 0;}
+    .crs-tab-cont .book-bx .bk{width: 100%;max-width: 240px;margin: 0 auto;float: none;margin-bottom: 15px;}
+    .crs-tab-cont .book-bx .bk img{height: auto;}
+    .crs-tab-cont .book-bx .bk-info{width: 100%;}
+    .crs-tab-cont .book-bx .bk-info .tit{font-size: 18px;line-height: 1.2;margin-bottom: 7px;}
+    .crs-tab-cont .book-bx .bk-info .t-gray{margin-bottom: 15px;}
+    .crs-tab-cont .book-bx .bk-info p {margin-bottom: 2px;font-size: 15px;}
+    .crs-tab-cont .book-bx .bk-info .txt{margin-top: 15px;padding-top: 20px;}
+    .crs-tab-cont .dt-crs-list>li{padding: 10px 0;}
+    .crs-tab-cont .dt-crs-list>li>.tit{font-size: 15px;width: calc(100% - 70px);}
+    .crs-tab-cont .dt-crs-list>li>.tm{font-size: 14px;width: 70px;}
+    .crs-tab-cont h6.has-star .f-r{width: 100%;margin-top: 5px;font-size: 15px;}
+    .star-event.big>span{width: 20px;height: 20px;background-size: 15px 15px !important;}
+    .review-list>li{margin-bottom: 15px;}
+    .review-list>li .txt, .review-list > li .edit-area textarea{padding: 13px;}
+    .review-list > li .tp strong{font-size: 14px;}
+    .review-list > li .tp span{font-size: 13px;}
+
+
+    .crs-bx{border: 0;border-top: 1px solid #ccc;padding: 0 0 15px;margin-bottom: 0;}
+    .crs-bx:not(:last-of-type):after{content: "";display: block;background: #f0f0f0;;height: 15px;margin: 5px -15px 15px;}
+    .crs-tab-cont ~ .crs-bx:not(:last-of-type):after{margin: 15px -15px 5px;}
+    .crs-bx .btn-more{font-size: 13px;color: #555;background: #fff;margin-top: 5px;}
+    .crs-bx .btn-more:before{display: none;}
+    .crs-bx .btn-more:after{content: "";display: inline-block;background: url("/theme/oklassedu/pix/images/icon_arrow_down.png") no-repeat center;background-size: auto 6px;width: 13px;height: 6px;margin-left: 5px;vertical-align: middle;}
+    .crs-bx.no-mg+.pg-tit{margin-top: 0;}
+    .crs-bx.no-mg+.bar-tab-grp{margin-top: 0;}
+    .crs-list>li{padding: 15px 0 !important;border-top: 0;border-bottom: 1px solid #eee !important;}
+    .crs-list>li .img{width: 120px;height: 68px;margin-right: 10px;padding-bottom: 27px;}
+    .crs-list>li .img img{height: 68px;}
+    .crs-list>li .txt{width: calc(100% - 130px);padding-right: 0;}
+    .crs-list>li .txt>div{font-size: 15px;margin-bottom: 10px;line-height: 19px;max-height: 38px;top: -5px;display:-webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+    .crs-list>li .img .ic-heart{width: 28px;height: 28px;background-size: 12px auto !important;}
+    .crs-list>li .txt>p{font-size: 13px;letter-spacing: -0.7px;margin-bottom: 3px;}
+    .crs-list>li .txt>p>span:not(:last-of-type):after, .crs-list>li .txt>p>a>span:not(:last-of-type):after{margin: 0 5px;}
+    .crs-list>li .txt>p.t-gray{font-size: 13px;}
+    .crs-list>li .bt-area{background: transparent;}
+    .crs-list>li .bt-area{height: auto;}
+    .crs-list>li .bt-area .btns{position: absolute;left: 0;top: 83px;width: 120px;height: 30px;line-height: 28px;border-radius: 0;font-size: 14px;}
+    .lang-vi .crs-list>li .bt-area .btns, .lang-en .crs-list>li .bt-area .btns{font-size: 13px;letter-spacing: -0.5px;padding: 0 3px;}
+
+    .crs-list.book>li{min-height: 190px;box-sizing: border-box;}
+    .crs-list.book>li .img, .crs-list.book.big>li .img{height: 134px;width: 100px;box-sizing: border-box;}
+    .crs-list.book>li .img img{height: 100%;}
+    .crs-list.book>li .txt, .crs-list.book.big > li .txt{width: calc(100% - 110px);}
+    .crs-list>li .txt>p.f16{font-size: 13px;}
+    .crs-list>li .txt>p.f16 .p-down span:first-child{background-position: top 9px left;}
+    .crs-list.book>li .bt-area{height: auto;position: absolute;top: 149px;left: 0;}
+    .crs-list.book>li .bt-area .btns{display: block;position: static;width: 100px;box-sizing: border-box;}
+    .crs-list.book.big > li .txt > div{font-size: 15px;}
+    .crs-list > li .txt > p.f18{font-size: 14px;margin-top: 12px;margin-bottom: 3px;}
+    .crs-list > li .txt ul li{font-size: 13px;margin-bottom: 0;}
+    .crs-list.book > li .m-out{clear: both;padding-top: 40px;max-height: none;display: block;padding-top: 0;}
+    .crs-list.book > li .f18{font-size: 14px;margin-bottom: 5px;font-weight: 500;}
+    .crs-list.book > li .m-out .f18{margin-top: 10px;font-size: 14px !important;}
+    .crs-list.book > li>ul, .crs-list.book > li>.m-out>ul{margin-bottom: 12px}
+    .crs-list.book > li>ul>li{font-size: 13px;color: #555;}
+
+
+    /*## 강좌 상세 - 배지 전체보기 팝업 ##*/
+    .bdg-list{margin-bottom: 20px;}
+    .bdg-list .ic-badge{background-size: 45px auto;margin-bottom: 10px;height: 55px;}
+    .bdg-list>li .badge-img{margin-bottom: 10px;height: 55px;}
+    .bdg-list>li .badge-img img{width: 45px;}
+    .bdg-list>li>p{font-size: 12px;}
+    .bdg-list>li.on .ic-badge:before, .bdg-list>li.on .badge-img:before{font-size: 10px;top: 13px}
+    .bdg-list>li.on .ic-badge.level03:before{font-size: 10px;top: 14px}
+    .bdg-list>li.on .badge-img:after{height: 26px;background-size: auto 26px;top: 10px;}
+
+
+    /*## 교제 상세 ##*/
+    .bk-detail{margin-bottom: 25px;}
+    .bk-detail ~ .crs-bx .crs-list{padding-bottom: 15px}
+    .bk-detail .bk-img{float: none;margin-right: 0;text-align: center;width: 100%;height: auto;}
+    .bk-detail .bk-img img{position: static;width: 250px;margin-bottom: 20px;}
+    .bk-detail .bk-txt{width: 100%;padding: 0;}
+    .bk-detail .bk-txt .tit{font-size: 24px;line-height: 1.2;}
+    .bk-detail .bk-txt .t-gray{margin-bottom: 10px;}
+    .bk-detail .bk-txt .txt{margin-top: 10px;} 
+    .bk-detail .bk-txt .txt > div{margin-bottom: 8px;}
+    
+    
+    .bk-detail .bk-txt>.btns{width: 90px;min-width: 0;height: 30px;line-height: 28px;font-size: 14px;display: none;}
+    .bk-detail .bk-txt>p {width: 100%;}
+    .bk-detail .bk-txt>p>strong{font-size: 14px;width: 100%;}
+    .bk-detail .bk-txt>p>strong .p-down span:first-child{font-size: 14px;    background-position: top 10px center !important;}
+    .bk-detail .bk-txt>p>strong .p-down span{font-size: 13px;}
+    .bk-detail .bk-txt>p>span{display: block;width: 100%;}
+    .bk-detail .bk-txt>p>strong>em{font-size: 16px;}
+
+/*
+    .bk-detail .bk-txt > p{position: fixed;border-top: 1px solid #00b5e2;background: #f8f8f8;bottom: -23px;left: 0;width: 100%;padding: 10px;z-index: 9;padding-top: 70px;box-sizing: border-box;height: 60px;}
+    .on-button .bk-detail .bk-txt>p{bottom: 25px;}
+    .bk-detail .bk-txt > p.on{bottom: 0;padding-bottom: 56px;padding-top: 15px;height: auto;}
+    .on-button .bk-detail .bk-txt > p.on{padding-bottom: 104px;}
+    .bk-detail .bk-txt > p.on .m-show{width: 100%;padding: 0;border: 1px solid #ddd;background: #fff;padding: 13px 18px;box-sizing: border-box;font-size: 0;}
+    .bk-detail .bk-txt > p.on .m-show em{color: #888;font-style: normal;font-size: 12px;display: inline-block;width: 55px;vertical-align: text-top;}
+    .bk-detail .bk-txt > p.on .m-show span{color: #333;font-size: 13px;width: calc(100% - 55px);display: inline-block;vertical-align: text-top;}
+    .bk-detail .bk-txt > p > span{display: none;}
+    .bk-detail .bk-txt > p > strong{width: 100%;text-align: right;font-size: 12px;margin-top: 5px;}
+    .bk-detail .bk-txt > p > strong .p-down{display: inline-block;width: auto;}
+    .bk-detail .bk-txt > p > strong .p-down span{font-size: 11px;}
+    .bk-detail .bk-txt > p > strong .p-down span:first-child{font-size: 13px;background-position: top 9px left !important;}
+    .bk-detail .bk-txt > p > strong > em{font-size: 16px;margin-left: 20px;}
+
+    .bk-detail .bk-txt>p>.m-arrow{display: block;cursor: pointer;position: absolute;top: -19px;left: 50%;width: 60px;height: 15px;margin-left: -30px;box-sizing: border-box;min-width: 0;background: url("/theme/oklassedu/pix/images/icon_m_pay_arrow_up.png") no-repeat center;background-size: 68px auto;width: 68px;height: 21px;}
+    .bk-detail .bk-txt > p.on > .m-arrow{background-image: url("/theme/oklassedu/pix/images/icon_m_pay_arrow.png")}
+
+    .bk-detail .bk-txt > .btns.point{border-radius: 0;width: auto;height: 42px;line-height: 40px;position: fixed;left: 10px;bottom: 7px;z-index: 10;right: 10px;background: #00b5e2 !important;border-color: #00b5e2 !important;font-size: 15px;}
+    .on-button .bk-detail .bk-txt>.btns.point{bottom: 53px;}
+*/
+
+    /*## 알림 ##*/
+    .bar-list.f-l{float: none;}
+    .bar-list>li{font-size: 15px;}
+    .bar-list>li:not(:last-child):after{height: 14px;margin: 0 12px;}
+    .alram-right>p{margin-right: 0;display: block;}
+    .alram-right .btns{position: absolute;top: 166px;right: 15px;min-width: 70px;font-size: 14px;height: 35px;line-height: 33px;}
+    .alram-list{padding-left: 25px;}
+    .alram-list>li{padding: 15px 30px 15px 0;}
+    .alram-list>li:before{left: -28px;}
+    .alram-list>li .tit{font-size: 17px;}
+    .alram-list>li>p{font-size: 14px;}
+    .alram-list>li>p.tm{font-size: 13px;}
+    .alram-list>li>.al-close{width: 18px;height: 18px;background-size: contain;margin-top: -9px;right: 5px;}
+
+
+    /*## 게시판 - FAQ ##*/
+    .mk-c-tab>li{min-width: 100%;}
+    .mk-c-tab.col4>li{width: 50% !important;float: left;display: block;min-width: 0;}
+    .mk-c-tab>li.on>a{line-height: 1.2;}
+    .mk-c-tab>li>a{border: 1px solid #eee;min-height: 40px;padding: 9px 5px;font-size: 16px;letter-spacing: -0.6px;height: auto;line-height: 1.2;width: 100%;}
+    .lang-vi .mk-c-tab>li>a{font-size: 13px;padding-left: 0;padding-right: 0;}
+    .lang-en#page-local-management-term-personalinfo .mk-c-tab>li>a{padding-top: 10px;}
+    .mk-c-tab.col4>li.on>a{border: 1px solid #222;}
+    .faq-list li .hd{font-size: 15px;background-size: 14px auto !important;background-position: right 10px center !important;padding: 15px 35px 15px 50px;}
+    .faq-list li .cn{padding: 15px 15px 15px 50px;}
+    .faq-list li .hd:before{background-size: 16px auto !important;width: 50px;height: 50px;background-position: top 15px center;}
+    .faq-list li .cn:before{background-size: 16px auto !important;width: 50px;height: 50px;background-position: top 18px center;}
+
+
+    /*## 1:1상담내역 ##*/
+    .tp-tb-area{margin-bottom: 10px;}
+    /*## 1:1상담내역 상세 ##*/
+    .tb-detail-tit{padding: 15px 10px;margin-bottom: 10px;font-size: 16px;}
+    .tb-info{padding: 0 10px 10px;font-size: 14px;letter-spacing: -0.4px;}
+    .tb-cont{padding: 12px 10px;font-size: 14px;}
+    .tb-cont>*{font-size: 15px;}
+    .tb-file-area .tit{font-size: 16px;margin-bottom: 10px;}
+    .tb-file-area{padding-bottom: 10px;margin-bottom: 20px;}
+    .tb-file-area ul li a{font-size: 14px;background-size: 16px auto;padding-left: 20px;background-position: left center;}
+    .tb-btns-area .btns{min-width: 70px;height: 35px;line-height: 33px;}
+
+    /*## 반응형 테이블 ##*/
+    .table.m-block{display: block;overflow: hidden;margin-bottom: 20px;}
+    .table.m-block tbody{display: block;}
+    .table.m-block thead{display: none;}
+    .table.m-block tbody tr{display: block;padding: 0;border-bottom: 1px solid #ddd;font-size: 0;padding: 10px;float: left;width: 100%;box-sizing: border-box;}
+    .table.m-block tbody tr:last-child{border-bottom: 0;}
+    .table.m-block tbody tr td{display: inline-block;box-sizing: border-box;border: 0;padding: 5px;color: #777;}
+    .table.m-block tbody tr td.m-w100{text-align: left;}
+    .table.m-block tbody tr td:first-child:last-child{text-align: center;width: 100%;padding: 10px 10px;}
+    .table.m-block tbody tr td.text-left{width: 100%;color: #000;padding-bottom: 0;font-weight: 500;}
+    .table.m-block tbody tr td.w100-p-m{width: 100% !important;}
+    .m-f-r{float: right;}
+    .m-clear{clear: both;}
+    .m-w100{width: 100%;}
+    .table tbody tr td.m-col3{width: 32.33%;float: left;display: block;box-sizing;margin: 0 0.5%;min-height: 25px;padding: 3px 5px;margin-top: 5px;}
+    .table tbody tr td.m-col3 .btns{height: 100%;width: auto;line-height: 20px;min-width:0;font-size: 14px;margin: -3px -5px;display: block;padding: 3px 5px;}
+
+    /*## 개인정보 ##*/
+    .bx-tit{line-height: 1.2;font-size: 22px;margin-bottom: 10px;}
+    .bx-tit>span{display: block;margin-left: 0;}
+    .my-box{padding: 10px 15px 0;margin-bottom: 20px;}
+    .my-box .sub-tit{font-size: 20px;margin-bottom: 10px;}
+    .my-box .rw>strong{font-size: 15px;}
+    .my-box .rw>p{font-size: 15px;}
+
+
+
+    /*## 로그인 ##*/
+    .pagelayout-join .cont{justify-content: flex-start;height: auto;min-height: 0;padding-top: 20px;padding-bottom: 20px;}
+    .email-bx.login .btns.point{margin-top: 10px;height: 50px;line-height: 48px;font-size: 20px;}
+
+    /*## 로그인 - 나의계정찾기 ##*/
+    .login-bx .email-bx>p>strong{font-size: 18px;margin-bottom: 10px;}
+    .login-bx .email-bx.join>p select, .login-bx .email-bx.join>p.phone input[type=text]{height: 40px;font-size: 15px}
+    .login-bx .email-bx.join>p .dash{height: 40px;line-height: 40px;}
+    .login-bx .center-tit{margin-bottom: 10px;}
+    .fd-u-info>div{margin-bottom: 20px;}
+    .fd-u-info>div>strong{font-size: 18px;margin-bottom: 10px;}
+    .fd-u-info>div>.btns.br{margin-top: 0;}
+    .fd-u-info>div>strong+.warning{margin-top: 0;}
+
+
+    /*## 회원가입 - 약관동의 ##*/
+    .login-bx{width: 90%;padding: 20px 25px;;margin: 25px auto 30px;}
+    .login-tab{margin: -20px -25px 0;}
+    .login-tit{font-size: 20px;margin-bottom: 10px;line-height: 1.2}
+    .lang-en .login-tit, .lang-vi .login-tit{font-size: 16px;letter-spacing: -0.4px;}
+    .login-tab{margin-bottom: 20px;}
+    .scrl-box{margin-bottom: 15px;height: 150px;}
+    .login-bx .label-area{margin-bottom: 15px;}
+    /*## 회원가입 - 필수입력정보 ##*/
+    .login-bx .email-bx.join>p select{width: calc(33.33% - 5px);padding: 5px;}
+    .login-bx .email-bx.join>p select+select{margin-left: 7px;}
+    /*## 회원가입 - 회원가입 유형 선택 ##*/
+    .email-bx p{margin-bottom: 18px;}
+    .email-bx p input, .email-bx>p .btns{height: 40px;font-size: 15px;}
+    .email-bx p input[type=text], .email-bx p input[type=password]{width: 100%;padding: 0 10px;line-height: 38px;}
+    .email-bx p .btns.gray{width: 100%;margin-top: 5px;line-height: 38px;font-size: 15px;}
+    .email-bx p .warning{margin-top: 7px;}
+    .email-bx .btns-area{margin-bottom: 20px;}
+    .email-bx .btns.br{height: 40px;line-height: 38px;font-size: 16px;}
+    .login-bx .sns-area{padding-top: 20px;}
+    .login-bx .sns-area>a{padding-left: 40px;min-height: 45px;height: auto;}
+    .login-bx .sns-area>a .ic{width: 40px;}
+    .login-bx .sns-area>a .ic img{height: 16px;}
+    .login-bx .sns-area>a>span:not(.ic){padding: 12px 10px;font-size: 16px;letter-spacing: -0.5px;line-height: 1.2;}
+    /*## 회원가입 - 로그인인증 완료 ##*/
+    .mail-end-bx{padding-top: 30px;}
+    .mail-end-bx>div{margin-bottom: 25px;}
+    .mail-end-bx.style02>p{font-size: 22px;}
+    .mail-end-bx.style02>p.small{font-size: 16px;}
+    .mail-end-bx .btns{height: 50px;line-height: 48px;font-size: 18px;}
+
+    /*## 커뮤니티 ##*/
+    .cmnt-tit{font-size: 18px;line-height: 1.2;margin-bottom: 15px;}
+
+    /*## 전체검색 ##*/
+    .cont[style*="relative"], .mk-jobs.jobs-site .cont[style*="relative"]{padding-top: 115px;}
+    .tp-search-area{padding: 15px;background: #fff;top: 50px;}
+    .tp-search-area .input-div{height: 40px;padding-right: 40px;border: 1px solid #ccc;}
+    .tp-search-area .input-div input[type=text]{font-size: 17px;padding: 6px 10px;}
+    .tp-search-area .input-div .btn-search{width: 40px;height: 38px;background: url("/theme/oklassedu/pix/images/icon_search_blue02.png") no-repeat;background-size: 20px auto;background-position: center;}
+    .btn-more{height: 40px;line-height: 38px;font-size: 15px;margin: 0;}
+    .crs-list>li .img .ic-badge{background-size: 20px auto;top: 5px;right: 28px;width: 20px;height: 25px;}
+    .crs-list>li .img .badge-area{right: auto;left: 2px;top: 5px;}
+    .crs-list>li .img .badge-area>img{width: 16px;margin-left: 3px;height: auto;}
+
+
+    /*## 내정보 ##*/
+    .my-box.half{margin-bottom: 20px;}
+    .thumb-list.style04.course.slider li{padding-bottom: 0;margin-bottom: 0;}
+    .thumb-list.style04.course.slider{margin-bottom: 20px !important;}
+    .my-box.jobs .half{padding: 15px;}
+    .my-box.jobs .rw>strong.t-black{line-height: 30px;}
+    .my-box.jobs .rw>strong.t-black + p{padding-top: 10px;}
+    .my-box.jobs .rw>strong{width: 105px !important;letter-spacing: -0.7px;}
+    .my-box.jobs .rw>p {width: calc(100% - 105px) !important;}
+    .my-c-info-num{padding: 15px 0 20px;}
+    .my-c-info-num>li{margin: 0;width: 33.333%;font-size: 35px;}
+    .my-c-info-num>li>span{font-size: 14px;}
+    .resume-bx{padding: 15px 15px 5px;}
+    .resume-bx>ul{background: none;padding: 0;}
+    .resume-bx>ul>li{width: 100%;margin-bottom: 10px;}
+    .resume-bx>ul>li>span{font-size: 15px;width: 110px;}
+    .resume-bx>ul>li>strong{font-size: 15px;width: calc(100% - 110px);}
+    .resume-bx>ul>li span[class*=ic]{background-size: 17px auto;padding-left: 20px;letter-spacing: -0.9px;width: 110px;}
+    .resume-bx>ul>li span[class*=ic]+strong{width: calc(100% - 110px);}
+    .resume-bx>ul>li .ic-file{line-height: 20px;}
+
+
+    /*## 게시판 - 이미지 게시판 목록 ##*/
+    .thumb-board > li{padding: 12px 0;}
+    .thumb-board > li .img{width: 100px;height: 86px;margin-right: 10px;}
+    .thumb-board > li .img + .txt {width: calc(100% - 110px);}
+    .thumb-board > li .txt .tit{font-size: 16px;line-height: 1.2;letter-spacing: -0.4px;margin-bottom: 5px;}
+    .thumb-board > li .txt .t-gray{font-size: 14px;margin-bottom: 5px;}
+
+    /*## 게시판 - 글등록 ##*/
+    body[id*="jinoboard-write"] .mform .fitem div.fitemtitle{width: 100%;padding: 10px 15px 0 !important;float: none;}
+    body[id*="jinoboard-write"] .mform .fitem .felement{width: 100%;margin-left: 0;display: block;box-sizing: border-box;float: none;}
+
+    /*## 강사소개 상세 ##*/
+    .teacher-info .t-img{width: 300px;height: 170px;margin-right: 20px;}
+    .teacher-info .t-txt{width: calc(100% - 320px);}
+    .teacher-info .t-txt>p{margin-bottom: 5px;font-size: 14px;}
+    .teacher-info .t-txt .scrl-bx{margin-top: 6px;}
+    .teacher-info .t-txt .t-nm{font-size: 16px;}
+    .teacher-info .t-txt .t-nm strong{font-size: 20px;}
+    .teacher-info .t-txt .scrl-bx{height: 90px;padding: 10px;}
+    .txt-area .tit{font-size: 16px;margin-bottom: 7px;}
+    .txt-area .t-gray{font-size: 14px;}
+
+    /*## 추천로직 추가 ##*/
+    .bar-tab-grp{margin-bottom: 28px;}
+    .btn-more+.bar-tab-grp{margin-top: 28px;}
+    .bar-tab-grp .bar-tab{margin-bottom: 10px;}
+    .bar-tab-grp .bar-tab li a{font-size: 16px;}
+    .bar-tab-grp .cmpny-bx.slider .slick-arrow,.bar-tab-grp .main-contents .thumb-list.slider .slick-arrow{top: -33px !important;}
+    .bar-tab-grp .cmpny-bx.slider .slick-arrow,.bar-tab-grp .main-contents .thumb-list.slider .slick-arrow{top: -3px !important;}
+    .bar-tab-grp .cmpny-bx.slider,.bar-tab-grp .main-contents .thumb-list.slider {padding-top: 26px;}
+    .lang-en .bar-tab-grp .bar-tab li a, .lang-vi .bar-tab-grp .bar-tab li a{font-size: 14px;letter-spacing: -0.4px;}
+    .lang-en .bar-tab-grp .bar-tab li a{font-size: 13px;}
+    .lang-en .bar-tab>li:not(:first-child):before, .lang-vi .bar-tab>li:not(:first-child):before {height: 11px;margin: 0 5px;}
+
+    /*## 이벤트페이지 ##*/
+    .img-grp .wrp .link-tp>li:not(:last-child):after{width: 2px;height: 17px;vertical-align: middle;}
+    .img-grp .wrp .link-tp>li.on:first-child a{margin-right: 5px}
+    .img-grp .wrp .link-tp>li.on:last-child a{margin-left: 5px}
+    .img-grp .wrp .link-tp>li:not(.on):before{background-size: 20px auto;bottom: -30px;margin-left: -15px;}
+    .img-grp .wrp .link-tp>li a{padding: 8px 5px;background-size: auto 25px !important;height: 25px;width: 80px !important;border-radius: 5px !important;}
+    .img-grp .wrp.video .v-thumb{display: none;}
+    .img-grp .wrp .link-tp{display: none;}
+    
+    /*## 수강후기 ##*/
+    .mk-c-tab.col8>li{width: 50%;min-width: 50%;}
+    .toggle-tit{border-top: 1px solid #eee;}
+    .toggle-tit, .toggle-cont{margin: 0;text-align: left;}
+    
+    .m-select{position: relative;margin-bottom: 10px;z-index: 1;}
+    .m-select>strong{cursor: pointer;display: block;border: 1px solid #ccc;padding: 10px 30px 10px 10px;font-weight: normal;font-size: 15px;position: relative;}
+    .m-select>strong:after{content: "";display: block;background: url("/theme/oklassedu/pix/images/icon_arrow_down.png") no-repeat right 10px center;background-size: 11px auto;width: 30px;height: 44px;position: absolute;right: 0;top: 0;opacity: 0.7;}
+    .m-select.on>strong:after{transform: rotate(180deg)}
+    .m-select>ul{height: 0;opacity: 0;padding: 10px 0;position: absolute;left: 0;top: 43px;right: 0;border: 1px solid #d0d0d0 !important;box-shadow: 1px 1px 1px rgba(0,0,0,0.04);background: #fff;margin-bottom: 0 !important;transition: opacity 0.3s;}
+    .m-select.on>ul{height: auto;opacity: 1;}
+    .m-select>ul>li{width: 100% !important;border: 0 !important;}
+    .m-select>ul>li>a{text-align: left;padding: 8px 10px;border: 0 !important;background: #fff;min-height: 0;font-size: 14px;}
+    
+    /*## 결제내역 ##*/
+    .bar-tab>li>a{font-size: 14px;}
+    .bar-tab>li:not(:first-child):before{margin: 0 10px;height: 12px;}
+    
+    
+
+    /*#######################
+    ##       layerpop
+    #########################*/
+    .layerpop{width: 98% !important;left: 1% !important;top: 10px !important;}
+    .layerpop.main-pop{width: 98% !important;left: 1% !important;top:60px !important;;}
+    .layerpop .pop-title{padding: 17px 50px 17px 15px;font-size: 18px;}
+    .pop-title .pop-close{background-size: 17px auto;height: 60px;width: 50px;}
+
+    #page-local-my-info .layerpop.chng-pw{position: absolute !important;}
+
+    /*#######################
+    ##       course
+    #########################*/
+    .navbutton{margin-top: 0;}
+    .pagelayout-course .navbutton form input[type=submit]{margin-bottom: 0;}
+    .tp-crs-info{margin-bottom: 15px;border-bottom: 0;padding-bottom: 0;}
+    .tp-crs-info .tp h3>span{font-size: 14px;}
+    .tp-crs-info .tp h3{font-size: 20px;line-height: 28px;margin-bottom: 10px;}
+    .tp-crs-info .tp .dt{margin-bottom: 5px;}
+    .tp-crs-info .tp .dt>span{margin-top: 5px;font-size: 12px;}
+    .tp-crs-info .tp .dt>span:not(:last-child):after{background: #ddd;height: 12px;margin: 0 6px;}
+    .tp-crs-info .bt{padding-right: 0;}
+    .tp-crs-info .bt>span{max-width: calc(50% - 66px);}
+    .lang-en .tp-crs-info .bt>span{max-width: calc(50% - 74px);}
+    .lang-vi .tp-crs-info .bt>span{max-width: calc(50% - 90px);}
+    .tp-crs-info .bt .btns, .lang-en .tp-crs-info .bt .btns{margin-bottom: 5px;margin-top: 0;height: 30px;line-height: 28px;font-size: 14px;padding: 0 10px;margin-right: 5px;vertical-align: middle;width: auto;}
+    .tp-crs-info .bt .btns:after{background-size: 10px auto;margin-top: 0;}
+    .tp-crs-info .bt .f-r{width: 100%;margin-top: 5px;position: static;}
+    .tp-crs-info .bt .f-r p strong{font-size: 14px;font-weight: bold;}
+    .bar-event{height: 10px;}
+    ul.newweeks{margin: 0 -15px;border-bottom: 1px solid #d5d5d5;}
+    .course-content ul.topics li.section:not(.current), .course-content ul:not(.gtopics-0) li.section.main{border: 0;border-top: 1px solid #d5d5d5;margin-bottom: 0;background: #f5f5f5;}
+    .course-content ul:not(.gtopics-0) li.section.main:last-child{margin-bottom: 0;}
+    .newweeks > li.main h3.sectionname{padding: 13px 15px;font-size: 16px;min-height: 0;border-bottom: 0;}
+    .newweeks > li.main h3.sectionname>span:not(.delete_section){display: block;line-height: 1.2;width: calc(100% - 70px);}
+    .lang-vi .newweeks > li.main h3.sectionname>span:not(.delete_section){display: block;line-height: 1.2;width: calc(100% - 95px);}
+    .newweeks > li.main h3.sectionname>.f-r{margin-top: -10px;}
+    .newweeks > li.main h3.sectionname .f-r .dt{font-size: 14px;display: none;}
+    .newweeks > li.main .section .activity .mod-indent-outer{table-layout: fixed;}
+    .newweeks > li.main .section.img-text{padding: 15px 10px 10px;background: #f5f5f5;}
+    .mod-indent:empty{display: none;}
+    .newweeks > li.main .section.img-text .activity{margin-bottom: 0;padding: 5px 5px;background: transparent;}
+    .newweeks > li.main .activity .activityinstance{width: 100%;padding-right: 0;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    .newweeks > li.main .section.img-text .activity a{color: #222;font-size: 14px;}
+    .newweeks > li.main .section.img-text .activity a img.activityicon{margin-right: 5px;width: 20px;height: auto;}
+    .newweeks > li.main .section.img-text .activity a img.activityicon[src*=core]+span:before{margin-right: 5px;height: 19px;width: 19px;background-size: 15px auto !important;}
+    .newweeks > li.main .section.img-text .activity .f-r{clear: both;float: none;display: block;margin-top: 5px;padding-left: 34px;}
+    .newweeks > li.main .section.img-text .activity .crs-progress{font-size: 14px;text-align: left;min-width: 0;}
+    .newweeks li.main .section.img-text .activity .dt{margin-right: 3px;font-size: 14px;display: none;}
+    .section .activity .availabilityinfo, .section .activity .contentafterlink{margin-left: 27px;}
+    .section .activity .actions{}
+    .newweeks > li.main h3.sectionname .f-r .btns{height: 25px;line-height: 23px;font-size: 12px;margin-left: 5px;min-width: 45px;}
+    .path-course-view li.activity>div{padding-right: 40px;}
+    .editing.path-course-view li.activity>div{padding-right: 0;}
+
+
+
+
+
+    .editing-tp{font-size: 20px;padding-bottom: 13px;margin-bottom: 13px;}
+    .editing-tp span{font-size: 14px;}
+    .c-list, .course-explain{padding: 0 !important;;}
+    .newweeks>li.main{border: 0;border-top: 1px solid #d5d5d5;background: #f5f5f5;margin-bottom: 0;}
+    .section-0 .activities{padding: 20px 0;}
+    .section-0 .activities .activityinstance{margin: 3px;}
+    .section-0 .activities .activityinstance .instancename{width: 70px;height: 70px;font-size: 13px;background: #fff;}
+    .section-0 .activities .activityinstance .action-hide{width: 70px;font-size: 13px;}
+    .editing .newweeks > li.section.main .activity .activityinstance{padding-right: 9px;}
+    .editing .newweeks > li.main .section.img-text .activity a{padding: 0;}
+
+    /*#######################
+    ##   구인구직 모바일
+    #########################*/
+    .mk-jobs.jobs-site .video-card .video-thub{padding: 10px;}
+    .mk-jobs.jobs-site .video-card .video-thub h6{font-size: 13px;margin-bottom: 13px;line-height: 15px;max-height: 30px;}
+    .mk-jobs.jobs-site .video-card .video-thub p{font-size: 12px;line-height: 1.2;}
+    .mk-jobs.jobs-site .video-card .video-time p{font-size: 12px;}
+    .mk-jobs.jobs-site .video-card .video-card-img .justify-content-center{max-height: 160px;}
+    .ply-list{padding: 15px 0;}
+    .mk-jobs.jobs-site .ply-list ul li{margin: 0;}
+    .mk-jobs.jobs-site .ply-list ul li:first-child{margin-bottom: 10px;}
+    .mk-jobs.jobs-site .ply-list ul li .txt{margin: 0;width: calc(100% - 170px);}
+    .mk-jobs.jobs-site .ply-list ul li .img{margin-right: 10px;}
+    .ply-list ul li .txt>div{font-size: 14px;}
+    .ply-list ul li .txt>p{font-size: 13px;}
+
+    body .ply-list.slider.slider .slick-dots{display: none !important;}
+    .ply-list.slider .slick-arrow{top: -51px;margin-top: 0;background-size: 7px auto !important;width: 25px !important;height: 25px !important;background-color: #fff !important;border: 1px solid #ccc !important;}
+    .ply-list.slider .slick-prev{left: auto;right: 25px;border-radius: 3px 0 0 3px;border-right: 0;background-image: url("/theme/oklassedu/pix/images/icon_arrow_l.png");}
+    .ply-list.slider .slick-next{right: 0px;border-radius: 0 3px 3px 0;background-image: url("/theme/oklassedu/pix/images/icon_arrow_r.png");}
+
+    .mk-jobs.jobs-site .ply-list ul li {margin: 10px 0;width: 100%;}
+    .mk-jobs.jobs-site .ply-list ul li .img {width: 160px;height: 100px;}
+
+    /*## 관심정보 ##*/
+    .ck-my-info{margin-top: 20px;}
+    .ck-my-info .rw{margin-bottom: 12px;}
+    .ck-my-info .rw:last-child{margin-bottom: 7px;}
+    .ck-my-info .rw strong{display: block;float: none;width: 100%;margin-bottom: 7px;}
+    .ck-my-info .rw strong em{display: inline-block;}
+    .ck-my-info .rw p{float: none;width: 100%;}
+    .ck-my-info .rw p select{margin: 3px 0;}
+
+    /*## 이력서관리 상세 ##*/
+    .resume-tit .f-r{}
+    .resume-tit .btns{min-width: 85px;}
+    .resume-tit input[type=text]{height: 40px;width: 100%;margin-top: 10px;}
+    .my-box.imprt.resume .profile-img{width: 100px;height: 100px;margin: 0 auto 20px;float: none;}
+    .my-box.imprt.resume .profile-img .u-btn{width: 35px;height: 35px;right: -4px;bottom: -4px;background-size: 20px auto;}
+    .my-box.imprt.resume .f-l{width: 100%;margin-left: 0;}
+    .my-box.imprt.resume .f-l .rw.full{margin-bottom: 0;}
+
+    .my-box.resume.bx-inline .rw strong{width: 100%;}
+    .my-box.resume.bx-inline .rw p{width: 100%;}
+    .my-box.resume.bx-inline .rw p input[type=text]{width: 80px;}
+    .my-box.resume.bx-inline .custom-ck{margin-left: 0;width: 100%;margin-top: 10px;}
+    .tb-file-area ul li a.ic-close{width: 12px;height: 12px;}
+    .btns-area .btns.h60{height: 50px;line-height: 48px;font-size: 16px;min-width: 85px;margin-left: 2px;}
+
+    /*## 이력서 관리 ##*/
+    .ck-tab .f-r{float: none;width: 100%;margin-bottom: 10px;}
+    .ck-tab .custom-ck{margin-right: 10px;letter-spacing: -0.6px;}
+    .ck-tab .custom-ck:last-child{margin-right: 0;}
+    .block-bx{margin: 0;}
+    .block-bx>li{width: 100%;margin: 0 0 12px;padding: 20px 20px 10px;}
+
+    .my-box.move.resume{padding: 30px 10px 15px;}
+    .my-box.move.resume .ic-mv, .my-box.move.resume .ic-mv-sub{background-size: 15px auto;top: 0;left: 0px;width: 30px;height: 30px;}
+    .my-box.move.resume .ic-close{height: 26px;width: 26px;background-size: 13px auto;}
+    .tb-file-area.bx{padding: 15px 10px 5px;}
+
+    .my-box.move.resume>div.add-bx-wrap .add-bx{padding: 30px 10px 15px;}
+    .my-box.move.resume>div.add-bx-wrap .add-bx .dt-grp{width: 100%;}
+    .my-box.move.resume>div.add-bx-wrap .add-bx .ic-close{background-size: 15px auto;}
+
+    .my-box.move.resume+.pg-tit, .sortable-area+.pg-tit{margin-top: 20px;}
+    .sortable-area+.pg-tit .btns.m-w100{margin-top: 10px;}
+
+
+
+
+    /*## 기업회원 가입 아이디/비밀번호 등록 ##*/
+    .join-tit{font-size: 24px;margin-bottom: 10px;}
+    .nav-rd{margin: 70px 0 10px;}
+    .cont .nav-rd{margin: 0 0 10px;}
+    .nav-rd li{width: 30px;height: 30px;}
+    .nav-rd li a{line-height: 28px;}
+    .email-bx .custom-file-box input[type=text]{height: 40px;font-size: 15px;}
+    .email-bx .custom-file-box label.btns.gray{height: 40px;line-height: 38px;font-size: 15px;}
+    .login-bx.company .email-bx>div>strong{font-size: 18px;margin-bottom: 10px;}
+    .email-bx .half{width: 100%;margin-left: 0 !important;}
+
+    /*## 대시보드 ##*/
+    .dhboard-list li{width: calc(50% - 5px);}
+    .dhboard-list li{margin: 0 0 10px !important}
+    .dhboard-list li:not(:nth-child(2n)){margin: 0 10px 0 0 !important;}
+    .dhboard-list li .dash-num{line-height: 90px;font-size: 35px;}
+    .dhboard-list li>p{font-size: 14px;padding: 13px 0;}
+    .cont>.center-tit{margin-top: 0;font-size: 20px;margin-bottom: 10px;}
+    .dhboard-list + .center-tit{margin-top: 20px !important;}
+
+    /*## 채용공고 목록 ##*/
+    .btns.h50{height: 40px;line-height: 38px;font-size: 14px;}
+    .tab-btn .btn-area{float: none;width: 100%;margin-bottom: 10px;}
+    .tab-btn .btn-area .btns{height: 40px;line-height: 38px;font-size: 14px;margin-left: 0;width: 50%}
+    .tab-btn .tp-tb-area{float: none;width: 100%;}
+    .tab-btn .bar-tab{width: 100%;text-align: center;}
+    .tab-btn .tp-tb-area li{line-height: 1.3;}
+    .tab-btn .tp-tb-area li a{font-size: 14px;}
+    .tab-btn .bar-tab>li:not(:first-child):before{margin: 0 8px;height: 10px;}
+    .tb-tp{margin-bottom: 10px;}
+    .tb-tp .srch-area{width: 100%;float: none;text-align: right;margin-bottom: 5px;}
+    .tb-tp .srch-area input[type=text], .tb-tp .srch-area input[type=date]{width: 100%;margin: 0 0 5px;height: 35px;}
+    .tb-tp .srch-area input[type=date]{min-width: 100%;}
+    .tb-tp .srch-area .btns{width: 100%;margin: 0 0 5px;height: 35px;line-height: 33px;font-size: 14px;}
+
+    /*## 채용공고 등록 ##*/
+    .pagelayout-edu .cont .center-tit{font-size: 20px;margin-bottom: 10px;}
+    .group .center-tit.hasbtn{font-size: 22px;margin-bottom: 20px;}
+    .center-tit.hasbtn .btns{vertical-align: middle;margin-top: 0;}
+    .w-bx-tp{padding: 20px 15px;}
+    .w-bx-tp .imprt-txt{margin-bottom: 15px;}
+    .w-bx-tp .rw{margin-bottom: 15px;}
+    .w-bx-tp .sub-tit{font-size: 20px;margin-bottom: 18px;}
+    .w-bx-tp .rw .tit{margin-bottom: 10px;font-size: 17px;}
+    .w-bx-tp .rw input[type=text]{height: 40px;font-size: 14px;}
+    .w-bx-tp .rw select{height: 40px;font-size: 14px;}
+    .w-bx-tp .rw select.mg-bt10{margin-bottom: 5px !important;}
+    .w-bx-tp .rw .byte{line-height: 40px;}
+    .w-bx-tp .rw span{font-size: 14px;}
+    .w-bx-tp .rw .rd-group label{margin-right: 30px;}
+    .w-bx-tp .rw .ck-group label{margin-right: 0;width: 50%;}
+    .w-bx-tp .rw .pay select{width: 100%;margin: 5px 0;}
+    .w-bx-tp .rw .pay input[type=text]{width: calc(50% - 15px);}
+    .w-bx-tp .rw .pay>span{margin: 0;width: 30px;display: inline-block;text-align: center;}
+    .w-bx-tp .rw .dash{margin: 0;display: inline-block;width: 18px;text-align: center;}
+    .w-bx-tp .rw input.has-datepicker{width: calc(50% - 9px);}
+
+
+
+    /*## 기업정보 ##*/
+    .w-bx-tp{margin-bottom: 20px;}
+    .w-bx-tp.style02{padding: 0 15px 20px;}
+    .w-bx-tp.style02 .login-tab{margin: 0 -15px 20px;}
+    .company-info-area .ci-img{width: 130px;height: 130px;float: none;margin: 0 auto 10px;}
+    .company-info-area .ci-img .info-txt span{font-size: 10px;}
+    .company-info-area .ci-img>label{width: 35px;height: 35px;background-size: 15px auto;bottom: 3px;}
+    .company-info-area .ci-txt{width: 100%;}
+    .company-info-area .ci-txt>p{margin: 10px 0 0;}
+    .company-info-area .ci-txt>p>*{font-size: 14px;}
+    .btn-area .btns.h60{font-size: 18px;height: 50px;line-height: 48px;min-width: 100px;}
+
+
+    /*## 지원자 목록 ##*/
+    .search-form{padding: 20px 15px 5px;}
+    .search-form .rw{margin-bottom: 10px;}
+    .search-form .rw select{width: 100%;margin: 0 0 5px;font-size: 14px;}
+    .search-form .rw input[type=text]{width: 100%;margin: 0 0 5px;font-size: 14px;}
+    .search-form .rw .btns{margin: 0 0 5px;width: 100%;}
+    .search-form .rw .custom-ck{margin: 0 10px 5px 0;}
+    .custom-ck span{font-size: 13px;}
+    .custom-ck span:before{width: 17px;height: 17px;background-size: 17px auto;margin-right: 5px;}
+    .list-num.clearfix{padding-top: 25px;}
+    .list-num select, .sort-list>li>a{font-size: 13px;padding-left: 5px;padding-right: 13px;}
+    .sort-list>li>a{padding-right: 16px;}
+    .list-num .ck-btns select, .sort-list>li{margin-left: 5px;}
+    .bt-ck-list{margin-bottom: 20px;}
+    .bt-ck-list .btns{height: 35px;line-height: 33px;font-size: 13px;}
+    .bt-ck-list .btns.ic-down{background-size: 12px auto !important;background-position: left 7px center !important;padding-left: 20px;padding-right: 7px;}
+    .bt-ck-list select{font-size: 13px;}
+
+
+    /*# 인재검색 #*/
+    .ck-scrl-bx>.bx .bx-th label span{font-size: 13px;}
+    .ck-scrl-bx>.bx .bx-scrl>p label span{font-size: 12px;}
+
+    /*## 커뮤니티 ##*/
+    .move-community{padding: 0;}
+    .move-community img{width: 60px;height: auto;}
+    .move-community>p{margin: 20px 0 30px 0;font-size: 15px}
+    .move-community>a{font-size: 17px;min-width: 0;padding: 0 25px;height: 50px;line-height: 50px;}
+    .move-community>a:after{background-size: 15px auto;width: 15px;height: 12px;}
+
+
+
+    /*## 구인구직 css 변경작업 ##*/
+    .mk-jobs.jobs-site .video-card .video-thub h6{height: 30px;}
+    .mk-jobs.jobs-site .video-card .video-thub p{line-height: 14px;height: 28px;}
+    .mk-jobs.jobs-site .page-nav.has-icon:after{content: "";display: block;clear: both;}
+    .mk-jobs.jobs-site .page-nav.has-icon .f-r{position: static;text-align: right;margin: 25px 0 0;}
+    .vis-favourite {width: 92% !important;left: 4% !important;transform: translate(0,0) !important;margin: 0 !important;display: block !important;min-width: 0 !important;box-sizing: border-box;}
+    .mk-jobs.jobs-site .vis-favourite>.title-dialog {left: 15px;top: 4px;line-height: 1.4;}
+    .mk-jobs.jobs-site .vis-favourite>.title-dialog>p{display: block;font-size: 14px;}
+    .mk-jobs.jobs-site .vis-favourite>.close-dialog{background-size: 20px auto;right: 10px;}
+
+
+    /* 채용공고 리스트 */
+    .mk-jobs.jobs-site .pb-jbox, .mk-jobs.jobs-site .py-jbox{padding: 15px 15px 15px 15px !important;}
+    .mk-jobs.jobs-site .py-jbox.pl-0{padding-left: 0 !important;}
+    .mk-jobs.jobs-site .pg-tit{font-size: 20px;margin-bottom: 10px;letter-spacing: -1px;}
+    .mk-jobs.jobs-site .white-area .pg-tit{padding-right: 52px;}
+    .mk-jobs.jobs-site .ic.ic-heart{background-image: url("/theme/oklassedu/pix/images/icon_heart_big.png");}
+    .mk-jobs.jobs-site .ic.ic-heart-on{background-image: url("/theme/oklassedu/pix/images/icon_heart02_on.png");}
+    .mk-jobs.jobs-site .py-jbox .tit-jbox{font-size: 16px;margin-bottom: 10px;}
+    .mk-jobs.jobs-site .py-jbox .tit-jbox + .text-secondary{font-size: 13px;}
+    .mk-jobs.jobs-site .py-jbox .ic.ic-usd{background-size: 14px auto;vertical-align: middle;top: 0;width: 14px;height: 14px;}
+    .mk-jobs.jobs-site .cate-list>li{margin: 2px 4px 2px 0;line-height: 30px;}
+    .mk-jobs.jobs-site .cate-list>li a{padding: 0 10px;}
+    .mk-jobs.jobs-site .pr-jbox .col-md-2.d-none.text-primary{display: block !important;position: absolute;bottom: 20px;right: 20px;text-align: right;width: auto;}
+    /* 채용공고 상세 */
+    .mk-jobs.jobs-site .crs-bx .h5.font-weight-500{font-size: 16px;margin-bottom: 12px !important;}
+    .mk-jobs.jobs-site .crs-bx .row .col-md-9.border-top{padding-top: 15px !important;}
+    .mk-jobs.jobs-site .crs-bx .row .bg-md-area .d-inline-block.mx-2.my-1{display: none !important;}
+    .mk-jobs.jobs-site .crs-bx .row .bg-md-area br{display: none;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4{padding-bottom: 10px !important;}
+    .mk-jobs.jobs-site .crs-bx .row .col-md-9.border-top div.h2{font-size: 18px;}
+    .mk-jobs.jobs-site .crs-bx .ic.ic-heart02-on, .mk-jobs.jobs-site .ic.ic-heart02{background-size: 18px auto;vertical-align: text-bottom;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic{margin-right: 3px !important;vertical-align: middle;margin-top: -2px;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic.ic-work{width: 14px;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic.ic-usd{width: 14px;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic.ic-map-marker{width: 14px;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic.ic-time{width: 14px;}
+    .mk-jobs.jobs-site .ic.ic-map-marker, .mk-jobs.jobs-site .ic.ic-map-signs, .mk-jobs.jobs-site .ic.ic-user{width: 14px;}
+    .mk-jobs.jobs-site .ic-flag{width: 17px;height: auto;vertical-align: middle;}
+    .mk-jobs.jobs-site .crs-bx .row .border-bottom.pb-4 .ic.ic-calendar-on{width: 14px;}
+    .mk-jobs.jobs-site .btn-md-float{bottom: 10px;}
+    .mk-jobs.jobs-site.on-button .btn-md-float{bottom: 50px;}
+    .mk-jobs.jobs-site.has-float-btn .floating-menu{bottom: 105px;}
+    .mk-jobs.jobs-site .crs-bx .border-md-left.col-md-9 .ic.ic-facebook.ic-lg, .mk-jobs.jobs-site .crs-bx .border-md-left.col-md-9 .ic.ic-external-link.ic-lg{width: 24px;height: 24px;vertical-align: middle;}
+    .mk-jobs.jobs-site .crs-bx .border-md-left.col-md-9 .btn.py-lg-3{padding: 0;}
+    .mk-jobs.jobs-site .crs-bx .border-md-left.col-md-9 .btn.py-lg-3 .ic.ic-heart02{background-position: center;margin-right: -10px;}
+    .mk-jobs.jobs-site .ic.ic-eye{width: 17px;height: 17px;margin-right: 3px !important;}
+
+
+    /*## 추천로직 ##*/
+    .jobs-cmpny-list.slider-evt{margin: 0 -5px !important;}
+    .jobs-cmpny-list .slick-arrow{top: -33px;margin-top: 0;width: 25px !important;height: 25px !important;background-color: #fff !important;border: 1px solid #ccc !important;}
+    .jobs-cmpny-list .slick-prev, .jobs-cmpny-list .slick-prev:hover, .jobs-cmpny-list .slick-prev:focus{left: auto;right: 28px;border-radius: 3px 0 0 3px;border-right: 0;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_l.png") no-repeat center !important;background-size: 7px auto !important;}
+    .jobs-cmpny-list .slick-next, .jobs-cmpny-list .slick-next:hover, .jobs-cmpny-list .slick-next:focus{right: 3px;border-radius: 0 3px 3px 0;background: #fff url("/theme/oklassedu/pix/images/icon_arrow_r.png") no-repeat center !important;background-size: 7px auto !important;}
+}
+@media screen and (max-width:577px){
+    /*구인구직 css 변경작업*/
+    .main-contents .mx-0{ margin: 0 -5px !important;}
+    .main-contents .col-sm-6{ flex: 0 0 50% !important;max-width: 50% !important;}
+    .mk-jobs.jobs-site .main-contents .pg-tit + .row{margin: 0 -5px !important;}
+    .mk-jobs.jobs-site .video-card{padding: 5px 5px 10px;}
+    .mk-jobs.jobs-site .video-card .video-time{padding: 0 5px !important;}
+    .main-contents .white-area .cate-list{padding-top: 0;}
+    .w-bx-tp .rw textarea{font-size: 14px;height: 100px;}
+    .mk-jobs.jobs-site .main-slider .sd .group h2{margin-bottom: 15px;line-height: 1.2;margin-top: -10px;}
+}
+@media screen and (max-width:480px){
+    /*## main ##*/
+    .main-slider .sd img.ic-mobile{display: block;}
+    .main-slider .sd img.ic-pc{display: none;}
+    
+    /*#######################
+    ##       contents
+    #########################*/
+    body:not(.course-layout) .crs-left-block>ul>li{width: 50%;}
+
+    /*## 썸네일 ##*/
+    thumb-list{margin: 0 -5px;}
+    .thumb-list li{padding: 0 5px;}
+    .thumb-list.style04{clear: both;margin: -12px -15px 20px;background: #f0f0f0;padding: 0 0 15px;}
+    .thumb-list.style04:last-child{margin-bottom: 0;}
+    .thumb-list.style04:last-of-type{padding-bottom: 0;}
+    .thumb-list.style04.course.slider{margin-top: -12px !important;}
+    .thumb-list.style04>li{width: 100% !important;margin-bottom: 0 !important;padding: 0 15px;background: #fff;}
+    .thumb-list.style04 li .wp{min-height: 120px;border: 0;border-bottom: 1px solid #eee;padding: 14px 0;overflow: hidden;}
+    .thumb-list.style04 li:last-child .wp{border-bottom: 0;margin-bottom: 7px;}
+    .thumb-list.style04>li .img{float: left;width: 120px !important;height: 68px !important;margin-right: 10px;padding: 0 !important;}
+    .thumb-list.style04 li .ic-heart, .thumb-list.style04.course li .ic-heart{width: 30px;height: 30px;right: -5px;top: -5px;background-size: 15px auto !important;background-image: url("/theme/oklassedu/pix/images/icon_heart_big.png");}
+    .thumb-list.style04 li .ic-heart.on, .thumb-list.style04.course li .ic-heart.on{background-image: url("/theme/oklassedu/pix/images/icon_heart02_on.png");}
+    .thumb-list.style04 li .wp .txt{width: calc(100% - 130px);float: left;box-sizing: border-box;padding: 0 !important;}
+    .thumb-list.style04 li .wp .txt .tit, .thumb-list.style04.course li .wp .txt .tit{font-size: 15px;margin-bottom: 7px;line-height: 18px;height: auto;max-height: 36px;}
+    .thumb-list.style04 li .wp .txt p{margin-bottom: 4px;font-size: 13px;}
+    .thumb-list.style04 li .wp .txt .tit, .thumb-list.style04 li .wp .txt p{padding: 0;}
+    .thumb-list.style04 li .wp .txt p.t-gray{margin-bottom: 0;font-size: 13px;}
+    .thumb-list.style04 li .wp .txt p > span:first-child::after{margin: 0 5px;}
+
+    .thumb-list.style04 li .wp .txt > .bt{position: absolute;top: 82px;left: 0;width: 120px;height: 30px;line-height: 27px;font-size: 12px;box-sizing: border-box;}
+    .thumb-list.style04.course li .wp .txt .bt{margin-top: 0;}
+
+    .thumb-list.style04.course li .wp .img .lb{position: absolute;width: 100%;height: 100%;text-align: right;padding-top: 48px;padding-right: 7px;box-sizing: border-box;}
+    .thumb-list.style04.course li .wp .img .lb > span{min-width: 40px;padding: 0 5px;font-size: 12px;height: 25px;line-height: 23px;position: absolute;left: 0;top: 0;}
+    .thumb-list.style04.course li.hasgp .wp{min-height: 95px;}
+    .thumb-list.style04.course li .bar-area{clear: both;padding: 10px 0 0;border: 0;}
+    .thumb-list.style04.course li .bar-area{margin: 0;}
+
+    .thumb-list.style04.course .img .ic-badge{font-size: 13px;background-size: 12px auto;background-position: left 5px center;padding: 0 7px;height: 25px;line-height: 23px;right: 0;bottom: auto;top: 0;border-radius: 0;border: 0;text-decoration: underline;background: none;text-shadow: 1px 1px 2px rgb(0 0 0, 1);}
+    body .thumb-list.style04.course .img .ic-badge img{width: 15px;margin-top: 5px;margin-left: 5px;}
+
+    /*## 강좌 서브메인 ##*/
+    .thumb-list.style04 li .badge-area{right: auto;left: 2px;top: 5px;}
+    .thumb-list.style04 li .badge-area img{width: 25px;margin-left: 3px;}
+    .thumb-list.style04 li .ic-badge{background-size: 20px auto;right: 30px;top: 5px;width: 20px;height: 25px;}
+    .no-data {padding: 40px 0;}
+    .no-data div {font-size: 13px;}
+    h5.pg-tit ~ .no-data{position: relative;margin-bottom: 50px}
+    h5.pg-tit ~ .no-data:after{content: "";display: inline-block;height: 15px;background: #f0f0f0;position: absolute;bottom: -30px;left: -15px;right: -15px;}
+
+    /*## 개인정보 ##*/
+    .my-box{padding: 10px 15px 0;}
+    .bx-tit{line-height: 1.2}
+    .my-box .rw>strong{width: 70px;}
+    .my-box .rw>p{width: calc(100% - 70px);}
+    .my-box.imprt .rw:nth-child(n+5)>strong, .my-box:not(.imprt) .rw>strong{width: 100%;line-height: 1;margin-bottom: 5px;}
+    .my-box.imprt .rw:nth-child(n+5)>p, .my-box:not(.imprt) .rw>p{width: 100%;line-height: 1;margin-bottom: 10px;}
+
+    /*## 내정보 ##*/
+    .my-box.half{padding: 15px 0 0;}
+    .my-box.half .rw{margin-bottom: 10px;padding: 0 20px;}
+    .my-box .rw>p>span.t-gray{width: auto;margin-right: 5px;}
+    .my-box.half .rw>strong{width: 100px;line-height: 20px;}
+    .my-box.half .rw>strong.t-blcak{line-height: 30px;margin-bottom: 3px;}
+    .my-box.half .rw>p{width: calc(100% - 100px);line-height: 20px;}
+    .lang-en .my-box.half .rw>strong{letter-spacing: -0.6px;}
+    .my-box.half .my-crs-list .bg-tit{padding: 15px 20px;font-size: 17px;}
+    .my-box.half .my-crs-list>.num>ul{padding: 5px 20px 15px;}
+    .my-box.half.imprt .rw:first-child{position: static;}
+    .my-box.half .my-crs-list{margin-top: 50px;clear: both;float: left;width: 100%;}
+    .my-box.half .rw .btns{right: 15px;left: 15px;top: auto;bottom: 10px;bottom: 232px;}
+    .lang-en .my-box.half .rw .btns{bottom: 225px;}
+
+    /*## 강사소개 상세 ##*/
+    .teacher-info .t-img{width: 100%;height: 0;padding-top: 56.6%;margin: 0;}
+    .teacher-info .t-txt{width: 100%;padding: 15px;box-sizing: border-box;border: 1px solid #ddd;}
+
+    /*## 이력서관리 상세팝업 ##*/
+    .resume-inf-bx{padding: 15px 15px 10px;}
+    .resume-inf-bx.first .u-img{width: 60px;height: 60px;margin-right: 15px;}
+
+    /*## 강좌수료현황 팝업 ##*/
+    .u-info>strong{font-size: 16px;}
+    .u-info>img{width: 50px;height: 50px;margin-right: 10px;}
+    .table.bdg-tb td{padding: 5px;}
+    .table.bdg-tb td img{width: 15px;}
+
+    /*## 결제하기 팝업 ##*/
+    .layerpop .pop-contents{padding: 20px;}
+    .bg-box{padding: 15px;}
+    .bg-box .crs-tit{font-size: 15px;}
+    .bg-box .crs-txt>li>strong, .bg-box .crs-txt>li>span{font-size: 14px;}
+    .bg-box .price{font-size: 12px;}
+    .bg-box .price .p-down span{font-size: 12px;}
+    .bg-box .price .p-down span:first-child{font-size: 13px;}
+    .bg-box .price em{font-size: 14px;}
+    .bg-box>.rw>strong{font-size: 14px;}
+    .bg-box>.rd-rw>label{font-size: 14px;}
+    .bg-box>.rd-rw .dash-list>li, .bg-box>.rd-rw .t-info{font-size: 13px;}
+    .table.detail>tbody>tr>th{padding: 5px;font-size: 14px;letter-spacing: -0.3px;}
+    
+    /*## 학습창 ##*/
+    body .footer_pop.video_pop{padding-bottom: 85px;}
+    
+    /*## 쿠폰관리 ##*/
+    .info-txt{padding: 15px;margin-bottom: 15px}
+    .info-txt>li{font-size: 13px;}
+    .info-txt>li>span{width: 70px;}
+
+} 

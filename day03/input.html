@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <!--method 
+            get  : 데이터를 url로 쿼리 혹은 파람의 형태로 전달
+            post : body(본문, 데이터) 안에 데이터를 전송 
+            → 대표적인 것 : 로그인(아이디와 비번은 공개되면 안되기 때문에 post를 이용)-->
+    <form action="./1_책갈피.html" method=""> 
+        <label><input type="radio" name="mode"/>관리자</label> 
+        <label><input type="radio" name="mode"/>사용자</label>
+        <p>아이디 : <input type="text"/></p>
+        <p>비밀번호 : <input type="password"/></p>
+        <!--<input type="submit"/>
+            submit
+                form 태그의 데이터를 서버에 전송할 때 쓰는 제출 버튼
+            
+            <input type="button" value="로그인"/>
+            === <button>로그인</button>
+            -->
+        <button type="submit">로그인</button>
+    </form>    
+</body>
+</html>
