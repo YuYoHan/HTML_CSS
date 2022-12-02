@@ -77,4 +77,26 @@ body {
 .visual .inner .textBox {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
+    padding: 40px 50px 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.visual .inner .textBox .subTitle {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+    position: relative;
+    display: inline-block;
+    padding-right: 60px;
+}
+.visual .inner .textBox .subTitle::after {
+    content: "";
+    width: 50px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 0;
 }
